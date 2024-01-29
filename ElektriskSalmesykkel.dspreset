@@ -98,7 +98,7 @@
       </control>
 
       <!-- Reverb on -->
-      <button x="628" y="107" width="22" height="37" style="image" value="0">
+      <button x="619" y="99" width="27" height="50" style="image" value="0">
         <state name="reverb_off" mainImage="Resources/button_off.png" hoverImage="Resources/button_off.png" clickImage="Resources/button_on.png">
           <binding type="effect" level="instrument" effectIndex="" parameter="ENABLED" translation="fixed_value" translationValue="false"/>
           <binding type="control" level="ui" position="7" parameter="PATH" translation="fixed_value" translationValue="Resources/light_off.png"/>
@@ -111,7 +111,7 @@
       <image x="616" y="48" width="43" height="43" path="Resources/light_on.png" aspectRatioMode="preserve"/>
 
       <!-- Reverb long -->
-      <button x="673" y="107" width="22" height="37" style="image" value="0">
+      <button x="663" y="99" width="27" height="50" style="image" value="0">
         <state name="reverb_short" mainImage="Resources/button_off.png" hoverImage="Resources/button_off.png" clickImage="Resources/button_on.png">
           <binding type="effect" level="instrument" effectIndex="0" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/reverb-home.wav"/>
           <binding type="control" level="ui" position="9" parameter="PATH" translation="fixed_value" translationValue="Resources/light_off.png"/>
@@ -124,7 +124,7 @@
       <image x="660" y="48" width="43" height="43" path="Resources/light_on.png" aspectRatioMode="preserve"/>
 
       <!-- Reverb mix -->
-      <control x="694" y="39" width="58" height="120" parameterName="reverb_mix" type="percent" minValue="0" maxValue="1" textColor="FF000000" value="1" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+      <control x="694" y="39" width="58" height="120" parameterName="reverb_mix" type="percent" minValue="0" maxValue="1" textColor="FF000000" value="1" style="custom_skin_vertical_drag" customSkinImage="Resources/fader_shd.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
         <binding type="effect" level="instrument" position="0" parameter="FX_MIX" translationReversed="true"/>
       </control>
 
