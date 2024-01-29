@@ -245,7 +245,7 @@
       <sample loNote="71" hiNote="71"  rootNote="71" path="Samples/Viola/Viola_3B.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="203830" loopEnd="385446" loopCrossfade="100" start="0"/>
       <sample loNote="72" hiNote="72"  rootNote="72" path="Samples/Viola/Viola_4C.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="189172" loopEnd="334241" loopCrossfade="100" start="0"/>
       <sample loNote="73" hiNote="73"  rootNote="73" path="Samples/Viola/Viola_4C#.wav" sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="322107" loopEnd="639125" loopCrossfade="100" start="0"/>
-      <sample loNote="74" hiNote="74"  rootNote="74" path="Samples/Viola/Viola_4D.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="27740"  loopEnd="322108" loopCrossfade="100" start="0"/>
+      <sample loNote="74" hiNote="74"  rootNote="74" path="Samples/Viola/Viola_4D.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="27740"  loopEnd="427891" loopCrossfade="100" start="0"/>
       <sample loNote="75" hiNote="75"  rootNote="75" path="Samples/Viola/Viola_4D#.wav" sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="370362" loopEnd="538580" loopCrossfade="100" start="0"/>
       <sample loNote="76" hiNote="76"  rootNote="76" path="Samples/Viola/Viola_4E.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="452773" loopEnd="623685" loopCrossfade="100" start="0"/>
       <sample loNote="77" hiNote="77"  rootNote="77" path="Samples/Viola/Viola_4F.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="285719" loopEnd="608291" loopCrossfade="100" start="0"/>
@@ -453,7 +453,7 @@
       <sample loNote="71" hiNote="71"  rootNote="71" path="Samples/Viola/Viola_3B.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="203830" loopEnd="385446" loopCrossfade="100" start="0"/>
       <sample loNote="72" hiNote="72"  rootNote="72" path="Samples/Viola/Viola_4C.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="189172" loopEnd="334241" loopCrossfade="100" start="0"/>
       <sample loNote="73" hiNote="73"  rootNote="73" path="Samples/Viola/Viola_4C#.wav" sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="322107" loopEnd="639125" loopCrossfade="100" start="0"/>
-      <sample loNote="74" hiNote="74"  rootNote="74" path="Samples/Viola/Viola_4D.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="27740"  loopEnd="322108" loopCrossfade="100" start="0"/>
+      <sample loNote="74" hiNote="74"  rootNote="74" path="Samples/Viola/Viola_4D.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="27740"  loopEnd="427891" loopCrossfade="100" start="0"/>
       <sample loNote="75" hiNote="75"  rootNote="75" path="Samples/Viola/Viola_4D#.wav" sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="370362" loopEnd="538580" loopCrossfade="100" start="0"/>
       <sample loNote="76" hiNote="76"  rootNote="76" path="Samples/Viola/Viola_4E.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="452773" loopEnd="623685" loopCrossfade="100" start="0"/>
       <sample loNote="77" hiNote="77"  rootNote="77" path="Samples/Viola/Viola_4F.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="285719" loopEnd="608291" loopCrossfade="100" start="0"/>
@@ -592,7 +592,7 @@
       <sample loNote="71" hiNote="71"  rootNote="71" path="Samples/Viola/Viola_3B.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="203830" loopEnd="385446" loopCrossfade="100" start="0"/>
       <sample loNote="72" hiNote="72"  rootNote="72" path="Samples/Viola/Viola_4C.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="189172" loopEnd="334241" loopCrossfade="100" start="0"/>
       <sample loNote="73" hiNote="73"  rootNote="73" path="Samples/Viola/Viola_4C#.wav" sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="322107" loopEnd="639125" loopCrossfade="100" start="0"/>
-      <sample loNote="74" hiNote="74"  rootNote="74" path="Samples/Viola/Viola_4D.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="27740"  loopEnd="322108" loopCrossfade="100" start="0"/>
+      <sample loNote="74" hiNote="74"  rootNote="74" path="Samples/Viola/Viola_4D.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="27740"  loopEnd="427891" loopCrossfade="100" start="0"/>
       <sample loNote="75" hiNote="75"  rootNote="75" path="Samples/Viola/Viola_4D#.wav" sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="370362" loopEnd="538580" loopCrossfade="100" start="0"/>
       <sample loNote="76" hiNote="76"  rootNote="76" path="Samples/Viola/Viola_4E.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="452773" loopEnd="623685" loopCrossfade="100" start="0"/>
       <sample loNote="77" hiNote="77"  rootNote="77" path="Samples/Viola/Viola_4F.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="285719" loopEnd="608291" loopCrossfade="100" start="0"/>
