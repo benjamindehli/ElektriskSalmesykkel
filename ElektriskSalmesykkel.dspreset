@@ -130,8 +130,8 @@
 
     </tab>
   </ui>
-  <groups attack="0.000" attackCurve="-25" decayCurve="100" releaseCurve="100" decay="0" sustain="1" release="0.06" volume=".4" ampVelTrack="0">
-    <group tags="diapason,diapason-selected">
+  <groups attack="0.000" attackCurve="-25" decayCurve="100" releaseCurve="100" decay="0" sustain="1" release="0.06" volume=".5" ampVelTrack="0">
+    <group tags="diapason,diapason-selected" volume="0.4">
       <effects>
         <effect type="lowpass" resonance="0.75" frequency="22000"/>
         <effect type="gain" level="10"/>
@@ -200,7 +200,7 @@
       <sample loNote="95" hiNote="95"  rootNote="95" path="Samples/Diapason/Diapason_5B.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="264120" loopEnd="468977" loopCrossfade="100" start="0"/>
       <sample loNote="96" hiNote="96"  rootNote="96" path="Samples/Diapason/Diapason_6C.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="474286" loopEnd="631602" loopCrossfade="100" start="0"/>
     </group>
-    <group tags="viola,diapason-selected" volume="1.1">
+    <group tags="viola,diapason-selected" volume="0.5">
       <effects>
         <effect type="lowpass" resonance="0.75" frequency="22000"/>
         <effect type="gain" level="10"/>
@@ -270,7 +270,7 @@
       <sample loNote="96" hiNote="96"  rootNote="96" path="Samples/Viola/Viola_6C.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="486149" loopEnd="715442" loopCrossfade="100" start="0"/>
     </group>
 
-    <group tags="diapason,close-selected">
+    <group tags="diapason,close-selected" volume="0.4">
       <effects>
         <effect type="lowpass" resonance="0.75" frequency="22000"/>
         <effect type="gain" level="10"/>
@@ -339,7 +339,7 @@
       <sample loNote="95" hiNote="95"  rootNote="95" path="Samples/Diapason/Diapason_5B.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="264120" loopEnd="468977" loopCrossfade="100" start="0"/>
       <sample loNote="96" hiNote="96"  rootNote="96" path="Samples/Diapason/Diapason_6C.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="474286" loopEnd="631602" loopCrossfade="100" start="0"/>
     </group>
-    <group tags="close,close-selected">
+    <group tags="close,close-selected" volume="0.4">
       <effects>
         <effect type="lowpass" resonance="0.75" frequency="22000"/>
         <effect type="gain" level="10"/>
@@ -408,7 +408,7 @@
       <sample loNote="95" hiNote="95"  rootNote="95" path="Samples/Close/Close_5B.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="276439" loopEnd="414704" loopCrossfade="100" start="0"/>
       <sample loNote="96" hiNote="96"  rootNote="96" path="Samples/Close/Close_6C.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="358166" loopEnd="506537" loopCrossfade="100" start="0"/>
     </group>
-    <group tags="viola,close-selected" volume="1.1">
+    <group tags="viola,close-selected" volume="0.5">
       <effects>
         <effect type="lowpass" resonance="0.75" frequency="22000"/>
         <effect type="gain" level="10"/>
@@ -478,7 +478,7 @@
       <sample loNote="96" hiNote="96"  rootNote="96" path="Samples/Viola/Viola_6C.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="486149" loopEnd="715442" loopCrossfade="100" start="0"/>
     </group>
 
-    <group tags="diapason,viola-selected">
+    <group tags="diapason,viola-selected" volume="0.4">
       <effects>
         <effect type="lowpass" resonance="0.75" frequency="22000"/>
         <effect type="gain" level="10"/>
@@ -547,7 +547,7 @@
       <sample loNote="95" hiNote="95"  rootNote="95" path="Samples/Diapason/Diapason_5B.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="264120" loopEnd="468977" loopCrossfade="100" start="0"/>
       <sample loNote="96" hiNote="96"  rootNote="96" path="Samples/Diapason/Diapason_6C.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="474286" loopEnd="631602" loopCrossfade="100" start="0"/>
     </group>
-    <group tags="viola,viola-selected" volume="1.1">
+    <group tags="viola,viola-selected" volume="0.5">
       <effects>
         <effect type="lowpass" resonance="0.75" frequency="22000"/>
         <effect type="gain" level="10"/>
@@ -617,7 +617,7 @@
       <sample loNote="96" hiNote="96"  rootNote="96" path="Samples/Viola/Viola_6C.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="1" loopStart="486149" loopEnd="715442" loopCrossfade="100" start="0"/>
     </group>
 
-    <group tags="key-on" trigger="attack" seqMode="random" seqLength="3" release="1.00" volume="2" ampVelTrack="1">
+    <group tags="key-on" trigger="attack" seqMode="random" seqLength="3" release="1.00" volume="1" ampVelTrack="1">
       <sample loNote="36" hiNote="36" rootNote="36" path="Samples/KeyOn/KeyOn_01_1C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="1"/>
       <sample loNote="36" hiNote="36" rootNote="36" path="Samples/KeyOn/KeyOn_02_1C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="2"/>
       <sample loNote="36" hiNote="36" rootNote="36" path="Samples/KeyOn/KeyOn_03_1C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="3"/>
@@ -802,7 +802,7 @@
       <sample loNote="96" hiNote="96" rootNote="96" path="Samples/KeyOn/KeyOn_02_6C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="2"/>
       <sample loNote="96" hiNote="96" rootNote="96" path="Samples/KeyOn/KeyOn_03_6C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="3"/>
     </group>
-    <group tags="key-off" trigger="release" seqMode="random" seqLength="3" volume="2" ampVelTrack="1">
+    <group tags="key-off" trigger="release" seqMode="random" seqLength="3" volume="1" ampVelTrack="1">
       <sample loNote="36" hiNote="36" rootNote="36" path="Samples/KeyOff/KeyOff_01_1C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="1"/>
       <sample loNote="36" hiNote="36" rootNote="36" path="Samples/KeyOff/KeyOff_02_1C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="2"/>
       <sample loNote="36" hiNote="36" rootNote="36" path="Samples/KeyOff/KeyOff_03_1C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="3"/>
