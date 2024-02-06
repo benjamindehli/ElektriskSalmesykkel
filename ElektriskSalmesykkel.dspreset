@@ -84,8 +84,11 @@
       </button>
 
       <!-- Tremulant -->
-      <control x="246" y="39" width="58" height="120" parameterName="tremulant_depth" type="float" minValue="0.00" maxValue="1.00" textColor="FF000000" value="1.00" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+      <control x="246" y="39" width="58" height="120" parameterName="tremulant_depth" type="float" minValue="0.00" maxValue="0.80" textColor="FF000000" value="1.00" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
         <binding level="instrument" type="modulator" position="0" parameter="MOD_AMOUNT" translationReversed="true" translation="linear"/>
+        <binding type="amp" level="tag" identifier="diapason" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0.75" translationOutputMax="1.0"/>
+        <binding type="amp" level="tag" identifier="close" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0.75" translationOutputMax="1.0"/>
+        <binding type="amp" level="tag" identifier="viola" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0.75" translationOutputMax="1.0"/>
       </control>
       <control x="291" y="39" width="58" height="120" parameterName="tremulant_rate" type="float" minValue="2.00" maxValue="6.00" textColor="FF000000" value="4.00" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
         <binding level="instrument" type="modulator" position="0" parameter="FREQUENCY" translationReversed="true" translation="linear"/>
