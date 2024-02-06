@@ -92,7 +92,7 @@
       </control>
 
       <!-- Noise -->
-      <control x="381" y="39" width="58" height="120" parameterName="noise-on_volume" type="float" minValue="0.00" maxValue="2.00" textColor="FF000000" value="1.75" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+      <control x="381" y="39" width="58" height="120" parameterName="noise_volume" type="float" minValue="0.00" maxValue="2.00" textColor="FF000000" value="1.75" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
         <binding type="amp" level="tag" identifier="key-on" parameter="AMP_VOLUME" translationReversed="true" translation="linear" translationOutputMin="0.0" translationOutputMax="1"/>
         <binding type="amp" level="tag" identifier="key-off" parameter="AMP_VOLUME" translationReversed="true" translation="linear" translationOutputMin="0.0" translationOutputMax="1"/>
       </control>
