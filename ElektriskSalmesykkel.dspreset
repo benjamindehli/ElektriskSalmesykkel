@@ -1020,6 +1020,4 @@
       <binding level="ui" type="control" position="0" parameter="VALUE" translationReversed="true" translation="linear" translationOutputMin="0" translationOutputMax="127"/>
     </cc>
   </midi>
-  <tags>
-  </tags>
 </DecentSampler>
