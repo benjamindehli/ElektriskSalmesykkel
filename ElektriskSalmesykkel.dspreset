@@ -10,7 +10,7 @@
     <tab name="main">
 
       <!-- Normal/Full -->
-      <control x="53" y="39" width="58" height="120" parameterName="lowpass-filter_frequency" minValue="0" maxValue="127" textColor="FF000000" value="127" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+      <control x="53" y="39" width="58" height="120" parameterName="expression" minValue="0" maxValue="127" textColor="FF000000" value="127" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
         <!-- Diapason selected -->
         <binding type="amp" level="group" groupIndex="1" parameter="AMP_VOLUME" modBehavior="set" translationReversed="true" translation="linear" translationOutputMin="0" translationOutputMax="1"/>
         <!-- Close selected -->
@@ -22,7 +22,7 @@
       </control>
 
       <!-- Soft/Loud -->
-      <control x="98" y="39" width="58" height="120" parameterName="lowpass-filter_frequency" minValue="4000" maxValue="22000" textColor="FF000000" value="4000" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+      <control x="98" y="39" width="58" height="120" parameterName="loudness" minValue="4000" maxValue="22000" textColor="FF000000" value="4000" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
         <binding type="effect" level="group" groupIndex="0" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear"/>
         <binding type="effect" level="group" groupIndex="1" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear"/>
         <binding type="effect" level="group" groupIndex="2" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear"/>
