@@ -1,10 +1,8 @@
 # Elektrisk Salmesykkel - Version: [1.0]
 
 Date: 2024-02-11
-
 Name: Benjamin Dehli
-
-Profile: [pianobook.co.uk/profile/benjamindehli](https://www.pianobook.co.uk/profile/benjamindehli/)
+Profile: pianobook.co.uk/profile/benjamindehli
 
 ## Included formats
 
@@ -24,18 +22,10 @@ A Yamaha L-20D electric harmonium / reed organ with some added features
 
 ## User Interface
 
-|![Overview](/Screenshots/elektrisk-salmesykkel.png)|
-|:--:|
-|Overview|
-
 The user interface offers precise control over every aspect of the instrument and effects.
 Explore parameters to refine your sound, including control over the wind supply, reeds, tremulant, mechanical noise and reverb.
 
 ### Mixer
-
-|![Wind and reed controls](/Screenshots/mixer.png)|
-|:--:|
-|Wind and reed controls|
 
 - Normal / Full (Swell)
   - Controlled by a knee lever on the original instrument and with the modulation wheel in the plugin
@@ -50,10 +40,6 @@ Explore parameters to refine your sound, including control over the wind supply,
 
 ### Tremulant
 
-|![Controls for the vibrato settings](/Screenshots/tremulant.png)|
-|:--:|
-|Controls for the tremulant settings|
-
 Tremulant varies the wind supply to the reeds. The controls enable you to adjust the tremulant with the desired depth and rate.
 
 - Normal / Tremulant (Depth)
@@ -63,18 +49,10 @@ Tremulant varies the wind supply to the reeds. The controls enable you to adjust
 
 ### Noise
 
-|![Noise controls](/Screenshots/noise.png)|
-|:--:|
-|Noise controls|
-
 - Silent / Noisy
   - The amount of mechanical noise from the keys when pressed down and released
 
 ### Reverb
-
-|![Controls for the room reverb impulse response](/Screenshots/reverb.png)|
-|:--:|
-|Controls for the room reverb impulse response|
 
 The reverb are achieved using carefully crafted impulse responses of a Chase Bliss Audio & Meris CXM 1978 reverb pedal. The short reverb, evoking the intimacy of a small room (home), and the long reverb (church), enveloping your sound in the vastness of a spacious environment.
 
