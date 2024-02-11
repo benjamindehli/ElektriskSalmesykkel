@@ -35,7 +35,7 @@ This sample library includes 2 presets, the regular preset "ElektriskSalmesykkel
 The user interface offers precise control over every aspect of the instrument and effects.
 Explore parameters to refine your sound, including control over the wind supply, reeds, tremulant, mechanical noise and reverb.
 
-### Mixer
+### Wind and reed settings
 
 |![Wind and reed controls](/Screenshots/mixer.png)|
 |:--:|

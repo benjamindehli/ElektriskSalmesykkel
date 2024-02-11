@@ -29,7 +29,7 @@ This sample library includes 2 presets, the regular preset "ElektriskSalmesykkel
 The user interface offers precise control over every aspect of the instrument and effects.
 Explore parameters to refine your sound, including control over the wind supply, reeds, tremulant, mechanical noise and reverb.
 
-### Mixer
+### Wind and reed settings
 
 - Normal / Full (Swell)
   - Controlled by a knee lever on the original instrument and with the modulation wheel in the plugin
