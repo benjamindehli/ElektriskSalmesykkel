@@ -20,6 +20,10 @@ A Yamaha L-20D electric harmonium / reed organ with some added features
 |  **Samples (Noise)**  |      48 kHz |    24 bit | 2 (stereo) |             366 |   63.60 MB |
 | **Impulse responses** |      48 kHz |    24 bit | 2 (stereo) |               2 |    2.50 MB |
 
+## Instrument presets
+
+This sample library includes 2 presets, the regular preset "ElektriskSalmesykkel" (best in most cases) and the looped preset "ElektriskSalmesykkel (Looped)". For the regular version, each sample are approximately 16 seconds long. For the looped version, to achieve the best possible loop point, some of the loops are short and some are longer. Some of the loops will however have some minor artifacts. For best audio quality, you should always use the regular version. And only if you have notes held for more than 16 seconds, use the the looped version.
+
 ## User Interface
 
 The user interface offers precise control over every aspect of the instrument and effects.
