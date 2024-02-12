@@ -47,10 +47,9 @@ Explore parameters to refine your sound, including control over the wind supply,
 - Soft / Loud (Loudness)
   - Determines how much air flows through the reeds
 - Diapason / Close / Viola
-  - Permanently opens the swell chamber for the diapason reeds
   - Diapason: Permanently opens the swell chamber for the diapason reeds
   - Close: Both swell chambers is closed
-  - Diapason: Permanently opens the swell chamber for the viola reeds
+  - Viola: Permanently opens the swell chamber for the viola reeds
 
 ### Tremulant
 
