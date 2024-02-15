@@ -1,6 +1,6 @@
-# Elektrisk Salmesykkel - Version: [1.0]
+# Elektrisk Salmesykkel - Version: [1.1]
 
-Date: 2024-02-11
+Date: 2024-02-15
 
 Name: Benjamin Dehli
 
@@ -9,6 +9,12 @@ Profile: [pianobook.co.uk/profile/benjamindehli](https://www.pianobook.co.uk/pro
 ## Included formats
 
 - Decent Sampler
+
+## Release notes
+
+### Version 1.1
+
+- Improved crossfades for loop points.
 
 ## Description
 
