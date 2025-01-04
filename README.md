@@ -1,10 +1,10 @@
-# Elektrisk Salmesykkel - Version: [1.1]
+# Elektrisk Salmesykkel - Version: [1.2]
 
-Date: 2024-02-15
+Date: 2025-01-04
 
 Name: Benjamin Dehli
 
-Profile: [pianobook.co.uk/profile/benjamindehli](https://www.pianobook.co.uk/profile/benjamindehli/)
+Profile: [store.dehlimusikk.no][Gumroad profile]
 
 ## Included formats
 
@@ -12,9 +12,17 @@ Profile: [pianobook.co.uk/profile/benjamindehli](https://www.pianobook.co.uk/pro
 
 ## Release notes
 
-### Version 1.1
+### Version 1.2 (2025-01-04)
 
-- Improved crossfades for loop points.
+- Removed amplitude envelope for one shot samples
+
+### Version 1.1 (2024-02-15)
+
+- Improved crossfades for loop points
+
+### Version 1.0 (2024-02-11)
+
+- First version released
 
 ## Description
 
@@ -93,3 +101,5 @@ The reverb are achieved using carefully crafted impulse responses of a Chase Bli
   - Switches between a long/big room (church) reverb and a short/small room (home) reverb
 - Dry / Wet
   - Mix between direct signal (dry) and reverb signal (wet)
+
+[Gumroad profile]: https://store.dehlimusikk.no/
