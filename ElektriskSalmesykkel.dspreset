@@ -103,7 +103,7 @@
       <!-- Reverb on -->
       <button x="619" y="99" width="27" height="50" style="image" value="0">
         <state name="reverb_off" mainImage="Resources/button_off.png" hoverImage="Resources/button_off.png" clickImage="Resources/button_on.png">
-          <binding type="effect" level="instrument" effectIndex="" parameter="ENABLED" translation="fixed_value" translationValue="false"/>
+          <binding type="effect" level="instrument" effectIndex="0" parameter="ENABLED" translation="fixed_value" translationValue="false"/>
           <binding type="control" level="ui" position="7" parameter="PATH" translation="fixed_value" translationValue="Resources/light_off.png"/>
         </state>
         <state name="reverb_on" mainImage="Resources/button_on.png" hoverImage="Resources/button_on.png" clickImage="Resources/button_off.png">
