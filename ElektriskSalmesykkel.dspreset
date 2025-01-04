@@ -620,7 +620,7 @@
       <sample loNote="96" hiNote="96"  rootNote="96" path="Samples/Viola/Viola_6C.wav"  sampleRate="48000.0" pitchKeyTrack="1" loopEnabled="0" start="0"/>
     </group>
 
-    <group tags="key-on" trigger="attack" seqMode="random" seqLength="3" release="1.00" volume="1" ampVelTrack="1">
+    <group tags="key-on" trigger="attack" seqMode="random" seqLength="3" volume="1" ampVelTrack="1" ampEnvEnabled="false">
       <sample loNote="36" hiNote="36" rootNote="36" path="Samples/KeyOn/KeyOn_01_1C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="1"/>
       <sample loNote="36" hiNote="36" rootNote="36" path="Samples/KeyOn/KeyOn_02_1C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="2"/>
       <sample loNote="36" hiNote="36" rootNote="36" path="Samples/KeyOn/KeyOn_03_1C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="3"/>
@@ -805,7 +805,7 @@
       <sample loNote="96" hiNote="96" rootNote="96" path="Samples/KeyOn/KeyOn_02_6C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="2"/>
       <sample loNote="96" hiNote="96" rootNote="96" path="Samples/KeyOn/KeyOn_03_6C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="3"/>
     </group>
-    <group tags="key-off" trigger="release" seqMode="random" seqLength="3" volume="1" ampVelTrack="1">
+    <group tags="key-off" trigger="release" seqMode="random" seqLength="3" volume="1" ampVelTrack="1" ampEnvEnabled="false">
       <sample loNote="36" hiNote="36" rootNote="36" path="Samples/KeyOff/KeyOff_01_1C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="1"/>
       <sample loNote="36" hiNote="36" rootNote="36" path="Samples/KeyOff/KeyOff_02_1C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="2"/>
       <sample loNote="36" hiNote="36" rootNote="36" path="Samples/KeyOff/KeyOff_03_1C.wav"  sampleRate="48000.0" pitchKeyTrack="0" loopEnabled="0" start="0" seqPosition="3"/>
