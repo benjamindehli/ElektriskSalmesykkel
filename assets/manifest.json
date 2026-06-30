@@ -11151,7 +11151,9 @@
           "type": "convolution",
           "enabled": false,
           "mix": 0.0,
-          "ir": "ir:reverb-home"
+          "outputLevel": -10.0,
+          "ir": "ir:reverb-home",
+          "normalizeIr": false
         }
       ],
       "modulators": [
@@ -12128,7 +12130,7 @@
                         "parameter": "FX_IR_FILE",
                         "translation": "fixed_value",
                         "effectIndex": 0,
-                        "translationValue": "IR/reverb-home.wav"
+                        "translationValue": "ir:reverb-home"
                       },
                       {
                         "type": "control",
@@ -12153,7 +12155,7 @@
                         "parameter": "FX_IR_FILE",
                         "translation": "fixed_value",
                         "effectIndex": 0,
-                        "translationValue": "IR/reverb-church.wav"
+                        "translationValue": "ir:reverb-church"
                       },
                       {
                         "type": "control",
@@ -20794,7 +20796,9 @@
           "type": "convolution",
           "enabled": false,
           "mix": 0.0,
-          "ir": "ir:reverb-home"
+          "outputLevel": -10.0,
+          "ir": "ir:reverb-home",
+          "normalizeIr": false
         }
       ],
       "modulators": [
@@ -21771,7 +21775,7 @@
                         "parameter": "FX_IR_FILE",
                         "translation": "fixed_value",
                         "effectIndex": 0,
-                        "translationValue": "IR/reverb-home.wav"
+                        "translationValue": "ir:reverb-home"
                       },
                       {
                         "type": "control",
@@ -21796,7 +21800,7 @@
                         "parameter": "FX_IR_FILE",
                         "translation": "fixed_value",
                         "effectIndex": 0,
-                        "translationValue": "IR/reverb-church.wav"
+                        "translationValue": "ir:reverb-church"
                       },
                       {
                         "type": "control",
