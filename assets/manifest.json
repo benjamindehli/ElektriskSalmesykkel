@@ -26,6 +26,30 @@
           ],
           "loopCrossfadeMode": "linear",
           "volume": 0.4,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Diapason_1C",
@@ -1012,6 +1036,30 @@
           ],
           "loopCrossfadeMode": "linear",
           "volume": 0.5,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Viola_1C",
@@ -1998,6 +2046,30 @@
           ],
           "loopCrossfadeMode": "linear",
           "volume": 0.4,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Diapason_1C",
@@ -2984,6 +3056,30 @@
           ],
           "loopCrossfadeMode": "linear",
           "volume": 0.4,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Close_1C",
@@ -3970,6 +4066,30 @@
           ],
           "loopCrossfadeMode": "linear",
           "volume": 0.5,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Viola_1C",
@@ -4956,6 +5076,30 @@
           ],
           "loopCrossfadeMode": "linear",
           "volume": 0.4,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Diapason_1C",
@@ -5942,6 +6086,30 @@
           ],
           "loopCrossfadeMode": "linear",
           "volume": 0.5,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Viola_1C",
@@ -12060,6 +12228,30 @@
             "diapason-selected"
           ],
           "volume": 0.4,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Diapason_1C",
@@ -12679,6 +12871,30 @@
             "diapason-selected"
           ],
           "volume": 0.5,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Viola_1C",
@@ -13298,6 +13514,30 @@
             "close-selected"
           ],
           "volume": 0.4,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Diapason_1C",
@@ -13917,6 +14157,30 @@
             "close-selected"
           ],
           "volume": 0.4,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Close_1C",
@@ -14536,6 +14800,30 @@
             "close-selected"
           ],
           "volume": 0.5,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Viola_1C",
@@ -15155,6 +15443,30 @@
             "viola-selected"
           ],
           "volume": 0.4,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Diapason_1C",
@@ -15774,6 +16086,30 @@
             "viola-selected"
           ],
           "volume": 0.5,
+          "effects": [
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.75
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 10.0
+            },
+            {
+              "type": "lowpass",
+              "enabled": true,
+              "frequency": 22000.0,
+              "resonance": 0.25
+            },
+            {
+              "type": "gain",
+              "enabled": true,
+              "gain": 1.0
+            }
+          ],
           "samples": [
             {
               "source": "flac:Viola_1C",
