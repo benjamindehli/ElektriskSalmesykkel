@@ -11326,6 +11326,15 @@
           ]
         }
       ],
+      "ccBindings": [
+        {
+          "cc": 1,
+          "parameter": "AMP_VOLUME",
+          "groupIndex": 1,
+          "normMin": 1.0,
+          "normMax": 0.0
+        }
+      ],
       "ui": {
         "background": "img:background",
         "width": 812,
@@ -20958,6 +20967,15 @@
               "translationOutputMax": 0.16
             }
           ]
+        }
+      ],
+      "ccBindings": [
+        {
+          "cc": 1,
+          "parameter": "AMP_VOLUME",
+          "groupIndex": 1,
+          "normMin": 1.0,
+          "normMax": 0.0
         }
       ],
       "ui": {
