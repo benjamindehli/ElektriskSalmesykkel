@@ -13,8 +13,8 @@ juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
     assets.name = JucePlugin_Name;
 
    #if ELEKTRISKSALMESYKKEL_HAS_ASSETS
-    assets.manifestJson     = BinaryData::manifest_json;
-    assets.manifestJsonSize = BinaryData::manifest_jsonSize;
+    // The manifest is embedded SPLIT (manifest/index.json + modes/); the shared
+    // processor loads it via findResource, so no single manifest.json is needed.
     assets.findResource = [] (const juce::String& filename, int& sizeOut) -> const char*
     {
         for (int i = 0; i < BinaryData::namedResourceListSize; ++i)
