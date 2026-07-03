@@ -9625,19 +9625,9 @@
     "keyboard": {
       "colors": [
         {
-          "loNote": 0,
-          "hiNote": 35,
-          "color": "FF000000"
-        },
-        {
           "loNote": 36,
           "hiNote": 96,
-          "color": "FFFFFFFF"
-        },
-        {
-          "loNote": 97,
-          "hiNote": 127,
-          "color": "FF000000"
+          "color": "none"
         }
       ]
     }
