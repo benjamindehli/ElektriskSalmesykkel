@@ -14,6 +14,7 @@
   },
   "groups": [
     {
+      "uid": "grp_0",
       "tags": [
         "diapason",
         "diapason-selected"
@@ -657,6 +658,7 @@
       ]
     },
     {
+      "uid": "grp_1",
       "tags": [
         "viola",
         "diapason-selected"
@@ -1300,6 +1302,7 @@
       ]
     },
     {
+      "uid": "grp_2",
       "tags": [
         "diapason",
         "close-selected"
@@ -1943,6 +1946,7 @@
       ]
     },
     {
+      "uid": "grp_3",
       "tags": [
         "close",
         "close-selected"
@@ -2586,6 +2590,7 @@
       ]
     },
     {
+      "uid": "grp_4",
       "tags": [
         "viola",
         "close-selected"
@@ -3229,6 +3234,7 @@
       ]
     },
     {
+      "uid": "grp_5",
       "tags": [
         "diapason",
         "viola-selected"
@@ -3872,6 +3878,7 @@
       ]
     },
     {
+      "uid": "grp_6",
       "tags": [
         "viola",
         "viola-selected"
@@ -4515,6 +4522,7 @@
       ]
     },
     {
+      "uid": "grp_7",
       "tags": [
         "key-on"
       ],
@@ -6543,6 +6551,7 @@
       ]
     },
     {
+      "uid": "grp_8",
       "tags": [
         "key-off"
       ],
@@ -8573,6 +8582,7 @@
   ],
   "effects": [
     {
+      "id": "fx_convolution",
       "type": "convolution",
       "enabled": false,
       "mix": 0.0,
@@ -8583,6 +8593,7 @@
   ],
   "modulators": [
     {
+      "id": "mod_0",
       "shape": "sine",
       "frequency": 4.0,
       "modAmount": 1.0,
@@ -8590,6 +8601,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_0",
           "parameter": "LEVEL",
           "translation": "linear",
           "modBehavior": "set",
@@ -8601,6 +8613,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_1",
           "parameter": "LEVEL",
           "translation": "linear",
           "modBehavior": "set",
@@ -8612,6 +8625,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_2",
           "parameter": "LEVEL",
           "translation": "linear",
           "modBehavior": "set",
@@ -8623,6 +8637,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_3",
           "parameter": "LEVEL",
           "translation": "linear",
           "modBehavior": "set",
@@ -8634,6 +8649,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_4",
           "parameter": "LEVEL",
           "translation": "linear",
           "modBehavior": "set",
@@ -8645,6 +8661,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_5",
           "parameter": "LEVEL",
           "translation": "linear",
           "modBehavior": "set",
@@ -8656,6 +8673,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_6",
           "parameter": "LEVEL",
           "translation": "linear",
           "modBehavior": "set",
@@ -8667,6 +8685,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_0",
           "parameter": "FX_FILTER_FREQUENCY",
           "translation": "linear",
           "modBehavior": "set",
@@ -8678,6 +8697,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_1",
           "parameter": "FX_FILTER_FREQUENCY",
           "translation": "linear",
           "modBehavior": "set",
@@ -8689,6 +8709,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_2",
           "parameter": "FX_FILTER_FREQUENCY",
           "translation": "linear",
           "modBehavior": "set",
@@ -8700,6 +8721,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_3",
           "parameter": "FX_FILTER_FREQUENCY",
           "translation": "linear",
           "modBehavior": "set",
@@ -8711,6 +8733,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_4",
           "parameter": "FX_FILTER_FREQUENCY",
           "translation": "linear",
           "modBehavior": "set",
@@ -8722,6 +8745,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_5",
           "parameter": "FX_FILTER_FREQUENCY",
           "translation": "linear",
           "modBehavior": "set",
@@ -8733,6 +8757,7 @@
         {
           "type": "effect",
           "level": "group",
+          "targetId": "grp_6",
           "parameter": "FX_FILTER_FREQUENCY",
           "translation": "linear",
           "modBehavior": "set",
@@ -8757,7 +8782,9 @@
     {
       "cc": 1,
       "parameter": "AMP_VOLUME",
+      "targetId": "ctl_0",
       "groupIndex": 1,
+      "controlIndex": 0,
       "normMin": 1.0,
       "normMax": 0.0
     }
@@ -8773,6 +8800,7 @@
         "name": "main",
         "controls": [
           {
+            "id": "ctl_0",
             "rect": {
               "x": 53,
               "y": 89,
@@ -8791,10 +8819,12 @@
               "orientation": "vertical"
             },
             "mouseDragSensitivity": 100.0,
+            "controlIndex": 0,
             "bindings": [
               {
                 "type": "amp",
                 "level": "group",
+                "targetId": "grp_1",
                 "translationReversed": true,
                 "parameter": "AMP_VOLUME",
                 "translation": "linear",
@@ -8806,6 +8836,7 @@
               {
                 "type": "amp",
                 "level": "group",
+                "targetId": "grp_2",
                 "translationReversed": true,
                 "parameter": "AMP_VOLUME",
                 "translation": "linear",
@@ -8817,6 +8848,7 @@
               {
                 "type": "amp",
                 "level": "group",
+                "targetId": "grp_3",
                 "translationReversed": true,
                 "parameter": "AMP_VOLUME",
                 "translation": "linear",
@@ -8828,6 +8860,7 @@
               {
                 "type": "amp",
                 "level": "group",
+                "targetId": "grp_4",
                 "translationReversed": true,
                 "parameter": "AMP_VOLUME",
                 "translation": "linear",
@@ -8839,6 +8872,7 @@
               {
                 "type": "amp",
                 "level": "group",
+                "targetId": "grp_5",
                 "translationReversed": true,
                 "parameter": "AMP_VOLUME",
                 "translation": "linear",
@@ -8850,6 +8884,7 @@
             ]
           },
           {
+            "id": "ctl_1",
             "rect": {
               "x": 98,
               "y": 89,
@@ -8868,10 +8903,12 @@
               "orientation": "vertical"
             },
             "mouseDragSensitivity": 100.0,
+            "controlIndex": 1,
             "bindings": [
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_0",
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
@@ -8881,6 +8918,7 @@
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_1",
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
@@ -8890,6 +8928,7 @@
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_2",
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
@@ -8899,6 +8938,7 @@
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_3",
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
@@ -8908,6 +8948,7 @@
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_4",
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
@@ -8917,6 +8958,7 @@
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_5",
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
@@ -8926,6 +8968,7 @@
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_6",
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
@@ -8935,6 +8978,7 @@
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_0",
                 "translationReversed": true,
                 "parameter": "LEVEL",
                 "translation": "linear",
@@ -8946,6 +8990,7 @@
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_1",
                 "translationReversed": true,
                 "parameter": "LEVEL",
                 "translation": "linear",
@@ -8957,6 +9002,7 @@
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_2",
                 "translationReversed": true,
                 "parameter": "LEVEL",
                 "translation": "linear",
@@ -8968,6 +9014,7 @@
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_3",
                 "translationReversed": true,
                 "parameter": "LEVEL",
                 "translation": "linear",
@@ -8979,6 +9026,7 @@
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_4",
                 "translationReversed": true,
                 "parameter": "LEVEL",
                 "translation": "linear",
@@ -8990,6 +9038,7 @@
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_5",
                 "translationReversed": true,
                 "parameter": "LEVEL",
                 "translation": "linear",
@@ -9001,6 +9050,7 @@
               {
                 "type": "effect",
                 "level": "group",
+                "targetId": "grp_6",
                 "translationReversed": true,
                 "parameter": "LEVEL",
                 "translation": "linear",
@@ -9012,6 +9062,7 @@
               {
                 "type": "amp",
                 "level": "group",
+                "targetId": "grp_0",
                 "parameter": "ENV_ATTACK",
                 "translation": "linear",
                 "translationOutputMin": 0.0,
@@ -9022,6 +9073,7 @@
               {
                 "type": "amp",
                 "level": "group",
+                "targetId": "grp_1",
                 "parameter": "ENV_ATTACK",
                 "translation": "linear",
                 "translationOutputMin": 0.0,
@@ -9032,6 +9084,7 @@
               {
                 "type": "amp",
                 "level": "group",
+                "targetId": "grp_2",
                 "parameter": "ENV_ATTACK",
                 "translation": "linear",
                 "translationOutputMin": 0.0,
@@ -9042,6 +9095,7 @@
               {
                 "type": "amp",
                 "level": "group",
+                "targetId": "grp_3",
                 "parameter": "ENV_ATTACK",
                 "translation": "linear",
                 "translationOutputMin": 0.0,
@@ -9052,6 +9106,7 @@
               {
                 "type": "amp",
                 "level": "group",
+                "targetId": "grp_4",
                 "parameter": "ENV_ATTACK",
                 "translation": "linear",
                 "translationOutputMin": 0.0,
@@ -9062,6 +9117,7 @@
               {
                 "type": "amp",
                 "level": "group",
+                "targetId": "grp_5",
                 "parameter": "ENV_ATTACK",
                 "translation": "linear",
                 "translationOutputMin": 0.0,
@@ -9072,6 +9128,7 @@
               {
                 "type": "amp",
                 "level": "group",
+                "targetId": "grp_6",
                 "parameter": "ENV_ATTACK",
                 "translation": "linear",
                 "translationOutputMin": 0.0,
@@ -9082,6 +9139,7 @@
             ]
           },
           {
+            "id": "ctl_2",
             "rect": {
               "x": 246,
               "y": 89,
@@ -9101,10 +9159,12 @@
               "orientation": "vertical"
             },
             "mouseDragSensitivity": 100.0,
+            "controlIndex": 3,
             "bindings": [
               {
                 "type": "modulator",
                 "level": "instrument",
+                "targetId": "mod_0",
                 "translationReversed": true,
                 "parameter": "MOD_AMOUNT",
                 "translation": "linear",
@@ -9140,6 +9200,7 @@
             ]
           },
           {
+            "id": "ctl_3",
             "rect": {
               "x": 291,
               "y": 89,
@@ -9159,10 +9220,12 @@
               "orientation": "vertical"
             },
             "mouseDragSensitivity": 100.0,
+            "controlIndex": 4,
             "bindings": [
               {
                 "type": "modulator",
                 "level": "instrument",
+                "targetId": "mod_0",
                 "translationReversed": true,
                 "parameter": "FREQUENCY",
                 "translation": "linear",
@@ -9171,6 +9234,7 @@
             ]
           },
           {
+            "id": "ctl_4",
             "rect": {
               "x": 381,
               "y": 89,
@@ -9190,6 +9254,7 @@
               "orientation": "vertical"
             },
             "mouseDragSensitivity": 100.0,
+            "controlIndex": 5,
             "bindings": [
               {
                 "type": "amp",
@@ -9214,6 +9279,7 @@
             ]
           },
           {
+            "id": "ctl_5",
             "rect": {
               "x": 694,
               "y": 89,
@@ -9233,10 +9299,12 @@
               "orientation": "vertical"
             },
             "mouseDragSensitivity": 100.0,
+            "controlIndex": 10,
             "bindings": [
               {
                 "type": "effect",
                 "level": "instrument",
+                "targetId": "fx_convolution",
                 "translationReversed": true,
                 "parameter": "FX_MIX",
                 "effectIndex": 0,
@@ -9247,6 +9315,7 @@
         ],
         "buttons": [
           {
+            "id": "btn_0",
             "rect": {
               "x": 143,
               "y": 89,
@@ -9255,6 +9324,7 @@
             },
             "style": "image",
             "value": 1,
+            "controlIndex": 2,
             "states": [
               {
                 "name": "diapason",
@@ -9265,6 +9335,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_0",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 0,
@@ -9274,6 +9345,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_1",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 1,
@@ -9283,6 +9355,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_2",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 2,
@@ -9292,6 +9365,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_3",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 3,
@@ -9301,6 +9375,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_4",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 4,
@@ -9310,6 +9385,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_5",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 5,
@@ -9319,6 +9395,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_6",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 6,
@@ -9336,6 +9413,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_0",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 0,
@@ -9345,6 +9423,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_1",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 1,
@@ -9354,6 +9433,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_2",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 2,
@@ -9363,6 +9443,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_3",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 3,
@@ -9372,6 +9453,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_4",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 4,
@@ -9381,6 +9463,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_5",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 5,
@@ -9390,6 +9473,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_6",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 6,
@@ -9407,6 +9491,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_0",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 0,
@@ -9416,6 +9501,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_1",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 1,
@@ -9425,6 +9511,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_2",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 2,
@@ -9434,6 +9521,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_3",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 3,
@@ -9443,6 +9531,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_4",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 4,
@@ -9452,6 +9541,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_5",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 5,
@@ -9461,6 +9551,7 @@
                   {
                     "type": "general",
                     "level": "group",
+                    "targetId": "grp_6",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "groupIndex": 6,
@@ -9472,6 +9563,7 @@
             ]
           },
           {
+            "id": "btn_1",
             "rect": {
               "x": 619,
               "y": 149,
@@ -9480,6 +9572,7 @@
             },
             "style": "image",
             "value": 0,
+            "controlIndex": 6,
             "states": [
               {
                 "name": "reverb_off",
@@ -9490,6 +9583,7 @@
                   {
                     "type": "effect",
                     "level": "instrument",
+                    "targetId": "fx_convolution",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "effectIndex": 0,
@@ -9498,6 +9592,7 @@
                   {
                     "type": "control",
                     "level": "ui",
+                    "targetId": "img_0",
                     "parameter": "PATH",
                     "translation": "fixed_value",
                     "controlIndex": 7,
@@ -9515,6 +9610,7 @@
                   {
                     "type": "effect",
                     "level": "instrument",
+                    "targetId": "fx_convolution",
                     "parameter": "ENABLED",
                     "translation": "fixed_value",
                     "effectIndex": 0,
@@ -9523,6 +9619,7 @@
                   {
                     "type": "control",
                     "level": "ui",
+                    "targetId": "img_0",
                     "parameter": "PATH",
                     "translation": "fixed_value",
                     "controlIndex": 7,
@@ -9534,6 +9631,7 @@
             ]
           },
           {
+            "id": "btn_2",
             "rect": {
               "x": 663,
               "y": 149,
@@ -9542,6 +9640,7 @@
             },
             "style": "image",
             "value": 0,
+            "controlIndex": 8,
             "states": [
               {
                 "name": "reverb_short",
@@ -9552,6 +9651,7 @@
                   {
                     "type": "effect",
                     "level": "instrument",
+                    "targetId": "fx_convolution",
                     "parameter": "FX_IR_FILE",
                     "translation": "fixed_value",
                     "effectIndex": 0,
@@ -9560,6 +9660,7 @@
                   {
                     "type": "control",
                     "level": "ui",
+                    "targetId": "img_1",
                     "parameter": "PATH",
                     "translation": "fixed_value",
                     "controlIndex": 9,
@@ -9577,6 +9678,7 @@
                   {
                     "type": "effect",
                     "level": "instrument",
+                    "targetId": "fx_convolution",
                     "parameter": "FX_IR_FILE",
                     "translation": "fixed_value",
                     "effectIndex": 0,
@@ -9585,6 +9687,7 @@
                   {
                     "type": "control",
                     "level": "ui",
+                    "targetId": "img_1",
                     "parameter": "PATH",
                     "translation": "fixed_value",
                     "controlIndex": 9,
@@ -9598,6 +9701,7 @@
         ],
         "images": [
           {
+            "id": "img_0",
             "rect": {
               "x": 616,
               "y": 98,
@@ -9609,6 +9713,7 @@
             "controlIndex": 7
           },
           {
+            "id": "img_1",
             "rect": {
               "x": 660,
               "y": 98,
