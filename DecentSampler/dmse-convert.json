@@ -1,0 +1,9 @@
+{
+    "gain": -9,
+    "normalizeIr": false,
+    "reverbGain": -10,
+    "polySaveDefault": false,
+    "keyboardColors": {
+        "default": [{ "loNote": 36, "hiNote": 96, "color": "none" }]
+    }
+}
