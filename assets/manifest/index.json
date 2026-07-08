@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "format": "dmse-manifest",
+  "library": "ElektriskSalmesykkel",
+  "gainDb": -9.0,
+  "polySaveDefault": false,
+  "modes": [
+    "elektrisksalmesykkel-looped",
+    "elektrisksalmesykkel"
+  ]
+}
