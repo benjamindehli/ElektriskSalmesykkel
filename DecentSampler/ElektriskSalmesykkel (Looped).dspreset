@@ -22,14 +22,14 @@
       </control>
 
       <!-- Soft/Loud -->
-      <control x="98" y="39" width="58" height="120" parameterName="Loudness" minValue="4000" maxValue="22000" textColor="FF000000" value="4000" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
-        <binding type="effect" level="group" groupIndex="0" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear"/>
-        <binding type="effect" level="group" groupIndex="1" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear"/>
-        <binding type="effect" level="group" groupIndex="2" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear"/>
-        <binding type="effect" level="group" groupIndex="3" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear"/>
-        <binding type="effect" level="group" groupIndex="4" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear"/>
-        <binding type="effect" level="group" groupIndex="5" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear"/>
-        <binding type="effect" level="group" groupIndex="6" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear"/>
+      <control x="98" y="39" width="58" height="120" parameterName="Loudness" minValue="0" maxValue="127" textColor="FF000000" value="0" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding type="effect" level="group" groupIndex="0" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear" translationOutputMin="4000" translationOutputMax="22000" />
+        <binding type="effect" level="group" groupIndex="1" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear" translationOutputMin="4000" translationOutputMax="22000" />
+        <binding type="effect" level="group" groupIndex="2" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear" translationOutputMin="4000" translationOutputMax="22000" />
+        <binding type="effect" level="group" groupIndex="3" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear" translationOutputMin="4000" translationOutputMax="22000" />
+        <binding type="effect" level="group" groupIndex="4" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear" translationOutputMin="4000" translationOutputMax="22000" />
+        <binding type="effect" level="group" groupIndex="5" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear" translationOutputMin="4000" translationOutputMax="22000" />
+        <binding type="effect" level="group" groupIndex="6" effectIndex="0" parameter="FX_FILTER_FREQUENCY" translationReversed="true" translation="linear" translationOutputMin="4000" translationOutputMax="22000" />
         <binding type="effect" level="group" groupIndex="0" effectIndex="1" parameter="LEVEL" translationReversed="true" translation="linear" translationOutputMin="0.0" translationOutputMax="6.0"  />
         <binding type="effect" level="group" groupIndex="1" effectIndex="1" parameter="LEVEL" translationReversed="true" translation="linear" translationOutputMin="0.0" translationOutputMax="6.0"  />
         <binding type="effect" level="group" groupIndex="2" effectIndex="1" parameter="LEVEL" translationReversed="true" translation="linear" translationOutputMin="0.0" translationOutputMax="6.0"  />
@@ -84,20 +84,20 @@
       </button>
 
       <!-- Tremulant -->
-      <control x="246" y="39" width="58" height="120" parameterName="Tremulant Depth" type="float" minValue="0.00" maxValue="0.80" textColor="FF000000" value="0.80" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
-        <binding level="instrument" type="modulator" position="0" parameter="MOD_AMOUNT" translationReversed="true" translation="linear"/>
+      <control x="246" y="39" width="58" height="120" parameterName="Tremulant Depth" type="float" minValue="0" maxValue="127" textColor="FF000000" value="127" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding level="instrument" type="modulator" position="0" parameter="MOD_AMOUNT" translationReversed="true" translation="linear" translationOutputMin="0.00" translationOutputMax="0.80" />
         <binding type="amp" level="tag" identifier="diapason" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0.75" translationOutputMax="1.0"/>
         <binding type="amp" level="tag" identifier="close" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0.75" translationOutputMax="1.0"/>
         <binding type="amp" level="tag" identifier="viola" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0.75" translationOutputMax="1.0"/>
       </control>
-      <control x="291" y="39" width="58" height="120" parameterName="Tremulant Rate" type="float" minValue="2.00" maxValue="6.00" textColor="FF000000" value="4.00" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
-        <binding level="instrument" type="modulator" position="0" parameter="FREQUENCY" translationReversed="true" translation="linear"/>
+      <control x="291" y="39" width="58" height="120" parameterName="Tremulant Rate" type="float" minValue="0" maxValue="127" textColor="FF000000" value="64" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding level="instrument" type="modulator" position="0" parameter="FREQUENCY" translationReversed="true" translation="linear" translationOutputMin="2" translationOutputMax="6" />
       </control>
 
       <!-- Noise -->
-      <control x="381" y="39" width="58" height="120" parameterName="Mechanical Noise" type="float" minValue="0.00" maxValue="2.00" textColor="FF000000" value="1.75" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
-        <binding type="amp" level="tag" identifier="key-on" parameter="AMP_VOLUME" translationReversed="true" translation="linear" translationOutputMin="0.0" translationOutputMax="1"/>
-        <binding type="amp" level="tag" identifier="key-off" parameter="AMP_VOLUME" translationReversed="true" translation="linear" translationOutputMin="0.0" translationOutputMax="1"/>
+      <control x="381" y="39" width="58" height="120" parameterName="Mechanical Noise" type="float" minValue="0.00" maxValue="127" textColor="FF000000" value="111" style="custom_skin_vertical_drag" customSkinImage="Resources/fader.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding type="amp" level="tag" identifier="key-on" parameter="AMP_VOLUME" translationReversed="true" translation="linear" translationOutputMin="0" translationOutputMax="1"/>
+        <binding type="amp" level="tag" identifier="key-off" parameter="AMP_VOLUME" translationReversed="true" translation="linear" translationOutputMin="0" translationOutputMax="1"/>
       </control>
 
       <!-- Reverb on -->
@@ -127,8 +127,8 @@
       <image x="660" y="48" width="43" height="43" path="Resources/light_off.png" aspectRatioMode="preserve"/>
 
       <!-- Reverb mix -->
-      <control x="694" y="39" width="58" height="120" parameterName="Reverb Mix" type="percent" minValue="0" maxValue="1" textColor="FF000000" value="1" style="custom_skin_vertical_drag" customSkinImage="Resources/fader_shd.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
-        <binding type="effect" level="instrument" position="0" parameter="FX_MIX" translationReversed="true"/>
+      <control x="694" y="39" width="58" height="120" parameterName="Reverb Mix" type="percent" minValue="0" maxValue="127" textColor="FF000000" value="127" style="custom_skin_vertical_drag" customSkinImage="Resources/fader_shd.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding type="effect" level="instrument" position="0" parameter="FX_MIX" translationReversed="true" translation="linear" translationOutputMin="0" translationOutputMax="1" />
       </control>
 
     </tab>
