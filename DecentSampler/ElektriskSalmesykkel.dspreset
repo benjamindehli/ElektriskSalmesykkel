@@ -111,7 +111,7 @@
           <binding type="control" level="ui" position="7" parameter="PATH" translation="fixed_value" translationValue="Resources/light_on.png"/>
         </state>
       </button>
-      <image x="616" y="48" width="43" height="43" path="Resources/light_on.png" aspectRatioMode="preserve"/>
+      <image x="616" y="48" width="43" height="43" path="Resources/light_off.png" aspectRatioMode="preserve"/>
 
       <!-- Reverb long -->
       <button x="663" y="99" width="27" height="50" style="image" value="0">
@@ -124,7 +124,7 @@
           <binding type="control" level="ui" position="9" parameter="PATH" translation="fixed_value" translationValue="Resources/light_on.png"/>
         </state>
       </button>
-      <image x="660" y="48" width="43" height="43" path="Resources/light_on.png" aspectRatioMode="preserve"/>
+      <image x="660" y="48" width="43" height="43" path="Resources/light_off.png" aspectRatioMode="preserve"/>
 
       <!-- Reverb mix -->
       <control x="694" y="39" width="58" height="120" parameterName="Reverb Mix" type="percent" minValue="0" maxValue="1" textColor="FF000000" value="1" style="custom_skin_vertical_drag" customSkinImage="Resources/fader_shd.png" customSkinNumFrames="13" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
