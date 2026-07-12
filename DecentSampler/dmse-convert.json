@@ -3,6 +3,7 @@
     "normalizeIr": false,
     "reverbGain": -10,
     "polySaveDefault": false,
+    "airSupply": { "volume": 0.35, "brightness": 0.40, "attack": 0.20, "tags": ["diapason", "viola", "close"] },
     "keyboardColors": {
         "default": [{ "loNote": 36, "hiNote": 96, "color": "none" }]
     }

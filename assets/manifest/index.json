@@ -4,6 +4,16 @@
   "library": "DecentSampler",
   "gainDb": -9.0,
   "polySaveDefault": false,
+  "airSupply": {
+    "volume": 0.35,
+    "brightness": 0.4,
+    "attack": 0.2,
+    "tags": [
+      "diapason",
+      "viola",
+      "close"
+    ]
+  },
   "modes": [
     "elektrisksalmesykkel-looped",
     "elektrisksalmesykkel"
