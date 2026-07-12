@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "format": "dmse-manifest",
-  "library": "ElektriskSalmesykkel",
+  "library": "DecentSampler",
   "gainDb": -9.0,
   "polySaveDefault": false,
   "modes": [

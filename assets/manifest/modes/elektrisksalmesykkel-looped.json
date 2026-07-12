@@ -11461,9 +11461,9 @@
               "height": 120
             },
             "label": "Loudness",
-            "min": 4000.0,
-            "max": 22000.0,
-            "value": 4000.0,
+            "min": 0.0,
+            "max": 127.0,
+            "value": 0.0,
             "textColor": "FF000000",
             "style": "custom_skin_vertical_drag",
             "skin": {
@@ -11481,6 +11481,8 @@
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
+                "translationOutputMin": 4000.0,
+                "translationOutputMax": 22000.0,
                 "effectIndex": 0,
                 "groupIndex": 0
               },
@@ -11491,6 +11493,8 @@
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
+                "translationOutputMin": 4000.0,
+                "translationOutputMax": 22000.0,
                 "effectIndex": 0,
                 "groupIndex": 1
               },
@@ -11501,6 +11505,8 @@
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
+                "translationOutputMin": 4000.0,
+                "translationOutputMax": 22000.0,
                 "effectIndex": 0,
                 "groupIndex": 2
               },
@@ -11511,6 +11517,8 @@
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
+                "translationOutputMin": 4000.0,
+                "translationOutputMax": 22000.0,
                 "effectIndex": 0,
                 "groupIndex": 3
               },
@@ -11521,6 +11529,8 @@
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
+                "translationOutputMin": 4000.0,
+                "translationOutputMax": 22000.0,
                 "effectIndex": 0,
                 "groupIndex": 4
               },
@@ -11531,6 +11541,8 @@
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
+                "translationOutputMin": 4000.0,
+                "translationOutputMax": 22000.0,
                 "effectIndex": 0,
                 "groupIndex": 5
               },
@@ -11541,6 +11553,8 @@
                 "translationReversed": true,
                 "parameter": "FX_FILTER_FREQUENCY",
                 "translation": "linear",
+                "translationOutputMin": 4000.0,
+                "translationOutputMax": 22000.0,
                 "effectIndex": 0,
                 "groupIndex": 6
               },
@@ -11718,8 +11732,8 @@
             "label": "Tremulant Depth",
             "valueType": "float",
             "min": 0.0,
-            "max": 0.8,
-            "value": 1.0,
+            "max": 127.0,
+            "value": 127.0,
             "textColor": "FF000000",
             "style": "custom_skin_vertical_drag",
             "skin": {
@@ -11737,6 +11751,8 @@
                 "translationReversed": true,
                 "parameter": "MOD_AMOUNT",
                 "translation": "linear",
+                "translationOutputMin": 0.0,
+                "translationOutputMax": 0.8,
                 "position": 0
               },
               {
@@ -11778,9 +11794,9 @@
             },
             "label": "Tremulant Rate",
             "valueType": "float",
-            "min": 2.0,
-            "max": 6.0,
-            "value": 4.0,
+            "min": 0.0,
+            "max": 127.0,
+            "value": 64.0,
             "textColor": "FF000000",
             "style": "custom_skin_vertical_drag",
             "skin": {
@@ -11798,6 +11814,8 @@
                 "translationReversed": true,
                 "parameter": "FREQUENCY",
                 "translation": "linear",
+                "translationOutputMin": 2.0,
+                "translationOutputMax": 6.0,
                 "position": 0
               }
             ]
@@ -11813,8 +11831,8 @@
             "label": "Mechanical Noise",
             "valueType": "float",
             "min": 0.0,
-            "max": 2.0,
-            "value": 1.75,
+            "max": 127.0,
+            "value": 111.0,
             "textColor": "FF000000",
             "style": "custom_skin_vertical_drag",
             "skin": {
@@ -11858,8 +11876,8 @@
             "label": "Reverb Mix",
             "valueType": "percent",
             "min": 0.0,
-            "max": 1.0,
-            "value": 1.0,
+            "max": 127.0,
+            "value": 127.0,
             "textColor": "FF000000",
             "style": "custom_skin_vertical_drag",
             "skin": {
@@ -11876,6 +11894,9 @@
                 "targetId": "fx_convolution",
                 "translationReversed": true,
                 "parameter": "FX_MIX",
+                "translation": "linear",
+                "translationOutputMin": 0.0,
+                "translationOutputMax": 1.0,
                 "effectIndex": 0,
                 "position": 0
               }
@@ -12277,7 +12298,7 @@
               "width": 43,
               "height": 43
             },
-            "image": "img:light_on",
+            "image": "img:light_off",
             "aspectRatioMode": "preserve",
             "controlIndex": 7
           },
@@ -12289,7 +12310,7 @@
               "width": 43,
               "height": 43
             },
-            "image": "img:light_on",
+            "image": "img:light_off",
             "aspectRatioMode": "preserve",
             "controlIndex": 9
           }
