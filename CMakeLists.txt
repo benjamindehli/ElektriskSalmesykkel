@@ -8,5 +8,5 @@
 dmse_add_plugin(ElektriskSalmesykkel
     PRODUCT_NAME "ElektriskSalmesykkel"
     PLUGIN_CODE  Elsk
-    VERSION      0.1.0
+    VERSION      2.0.0
 )
