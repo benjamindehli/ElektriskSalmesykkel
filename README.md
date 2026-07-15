@@ -1,4 +1,4 @@
-# Elektrisk Salmesykkel - Version: [2.0]
+# Elektrisk Salmesykkel
 
 A Yamaha L-20D electric harmonium / reed organ with some added features
 
