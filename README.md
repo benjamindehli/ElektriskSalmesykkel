@@ -1,32 +1,48 @@
-# Elektrisk Salmesykkel - Version: [1.2]
+# Elektrisk Salmesykkel - Version: [2.0]
 
-Date: 2025-01-04
-
-Name: Benjamin Dehli
-
-Profile: [store.dehlimusikk.no][Gumroad profile]
-
-## Included formats
-
-- Decent Sampler
+A Yamaha L-20D electric harmonium / reed organ with some added features
 
 ## Release notes
 
-### Version 1.2 (2025-01-04)
+### Version 2.0.0 (upcoming)
+
+- Added a plugin version. See the section "The plugin version".
+- Added an air supply emulation to the plugin version. See the section "Air supply".
+- Standardized the UI values for the controllers.
+- Fixed the default value for the tremulant depth.
+- The indicator lights now use the off image as default, matching the default state.
+
+### Version 1.2.0 (2025-01-04)
 
 - Removed amplitude envelope for one shot samples
 
-### Version 1.1 (2024-02-15)
+### Version 1.1.0 (2024-02-15)
 
 - Improved crossfades for loop points
 
-### Version 1.0 (2024-02-11)
+### Version 1.0.0 (2024-02-11)
 
 - First version released
 
-## Description
+## Included formats
 
-A Yamaha L-20D electric harmonium / reed organ with some added features
+- VST3 (macOS, Windows and Linux)
+- AU (macOS)
+- Standalone application (macOS, Windows and Linux)
+- Decent Sampler
+
+## The plugin version
+
+The plugin is a self-contained instrument for macOS, Windows and Linux, available as VST3, AU and Standalone.
+Samples, graphics and impulse responses are all embedded in the plugin itself, losslessly compressed, so there are no external files to install or locate.
+Only the samples for the selected preset are loaded into memory, and a fresh instance lets you choose which preset to load before anything is decoded.
+
+The plugin has all the controls and features from the Decent Sampler version, including MIDI learn, the master volume fader with output meter, value readouts for the knobs and full DAW automation.
+On top of that, the plugin version adds:
+
+- Drift wheels next to the pitch and modulation wheels, adding a subtle random pitch and volume drift to each voice.
+- A velocity curve setting in the settings menu.
+- An emulation of the shared air supply. See the section "Air supply".
 
 ## Technical specification
 
@@ -101,5 +117,20 @@ The reverb are achieved using carefully crafted impulse responses of a Chase Bli
   - Switches between a long/big room (church) reverb and a short/small room (home) reverb
 - Dry / Wet
   - Mix between direct signal (dry) and reverb signal (wet)
+
+## Air supply (plugin version only)
+
+The original Yamaha L-20D has a motor driven fan that supplies air to all the reeds.
+When many notes are played at once, each reed gets a smaller share of the air.
+The plugin emulates this behavior: the more notes you hold, the lower the volume, the softer the top end and the slower the attack of each note.
+The air recovers quickly when notes are released, just like the real blower.
+The emulation only affects the reed samples, not the mechanical key noises, and it can be turned on or off in the settings menu.
+
+## About this repository
+
+This repository contains the source for both the Decent Sampler library (the DecentSampler folder) and the plugin version.
+The plugin is a thin wrapper around the shared Dehli Musikk sampler engine, and a converter translates the Decent Sampler library into the engine's native preset format at build time.
+The audio files are not part of this repository, since the samples are a paid product.
+The full version is available from [store.dehlimusikk.no][Gumroad profile].
 
 [Gumroad profile]: https://store.dehlimusikk.no/
