@@ -120,6 +120,10 @@ The reverb are achieved using carefully crafted impulse responses of a Chase Bli
 
 ## Air supply (plugin version only)
 
+|![Toggle for the air supply emulation in the settings menu](/Screenshots/air-supply.png)|
+|:--:|
+|oggle for the air supply emulation in the settings menu|
+
 The original Yamaha L-20D has a motor driven fan that supplies air to all the reeds.
 When many notes are played at once, each reed gets a smaller share of the air.
 The plugin emulates this behavior: the more notes you hold, the lower the volume, the softer the top end and the slower the attack of each note.
