@@ -4,7 +4,7 @@ A Yamaha L-20D electric harmonium / reed organ with some added features
 
 ## Release notes
 
-### Version 2.0.0 (2026-07-18)
+### Version 2.0.0 (2026-07-19)
 
 - Added a plugin version. See the section "The plugin version".
 - Added an air supply emulation to the plugin version. See the section "Air supply".
