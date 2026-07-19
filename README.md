@@ -48,6 +48,10 @@ On top of that, the plugin version adds:
 - A velocity curve setting in the settings menu.
 - An emulation of the shared air supply. See the section "Air supply".
 
+## The Decent Sampler version
+
+This version of Elektrisk Salmesykkel is an instrument preset / sample library for Decent Sampler. If you're new to Decent Sampler, I recommend checking out [this guide][Decent Sampler guide] first.
+
 ## Technical specification
 
 |                       | Sample rate | Bit depth | Channels   | Number of files | File size  |
@@ -142,3 +146,4 @@ The audio files are not part of this repository, since the samples are a paid pr
 The full version is available from [store.dehlimusikk.no][Gumroad profile].
 
 [Gumroad profile]: https://store.dehlimusikk.no/
+[Decent Sampler guide]: https://www.decentsamples.com/how-to-use-decent-sampler/
