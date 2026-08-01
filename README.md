@@ -4,6 +4,16 @@ A Yamaha L-20D electric harmonium / reed organ with some added features
 
 ## Release notes
 
+### Version 2.1.0 (2026-08-01)
+
+The changes in this release apply to the plugin version only. The DecentSampler version is unchanged.
+
+- Added a translucent overlay graphic on top of the interface.
+- Keys that are hovered or held on the keyboard are now shaded in a neutral way instead of turning yellow:
+  - White keys turn darker.
+  - Black keys turn brighter.
+- The computer keyboard keeps playing notes even while you adjust a control with the mouse.
+
 ### Version 2.0.0 (2026-07-19)
 
 - Added a plugin version. See the section "The plugin version".
