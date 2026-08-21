@@ -1,5 +1,7 @@
 # Elektrisk Salmesykkel
 
+**[Product page and documentation](https://benjamindehli.github.io/ElektriskSalmesykkel/)**
+
 A Yamaha L-20D electric harmonium / reed organ with some added features
 
 ## Release notes
