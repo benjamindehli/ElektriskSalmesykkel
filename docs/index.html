@@ -33,22 +33,37 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://benjamindehli.github.io/ElektriskSalmesykkel/#website",
+      "name": "Elektrisk Salmesykkel",
+      "url": "https://benjamindehli.github.io/ElektriskSalmesykkel/",
+      "description": "Product page and documentation for Elektrisk Salmesykkel, a sample instrument by Dehli Musikk.",
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://musicbrainz.org/artist/56639e59-2bb5-40bd-9d5a-97d964298b6f"
+      },
+      "publisher": {
+        "@id": "https://www.dehlimusikk.no/"
+      },
+      "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+      "about": {
+        "@id": "https://www.dehlimusikk.no/products/elektrisk-salmesykkel/#product"
+      },
+      "sameAs": "https://github.com/benjamindehli/ElektriskSalmesykkel"
+    },
+    {
       "@type": "SoftwareApplication",
-      "@id": "https://store.dehlimusikk.no/l/elektrisk-salmesykkel",
+      "@id": "https://www.dehlimusikk.no/products/elektrisk-salmesykkel/#product",
       "name": "Elektrisk Salmesykkel",
       "description": "Elektrisk Salmesykkel: A Yamaha L-20D electric harmonium / reed organ with some added features",
       "url": "https://benjamindehli.github.io/ElektriskSalmesykkel/",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "Sample library / virtual instrument",
       "author": {
-        "@type": "Organization",
-        "name": "Dehli Musikk",
-        "url": "https://www.dehlimusikk.no/"
+        "@id": "https://musicbrainz.org/artist/56639e59-2bb5-40bd-9d5a-97d964298b6f"
       },
       "publisher": {
-        "@type": "Organization",
-        "name": "Dehli Musikk",
-        "url": "https://www.dehlimusikk.no/"
+        "@id": "https://www.dehlimusikk.no/"
       },
       "operatingSystem": "macOS, Windows, Linux",
       "softwareVersion": "2.1.0",
@@ -56,19 +71,15 @@
       "image": "https://benjamindehli.github.io/ElektriskSalmesykkel/img/screenshots-elektrisk-salmesykkel.webp",
       "screenshot": [
         "https://benjamindehli.github.io/ElektriskSalmesykkel/img/screenshots-elektrisk-salmesykkel.webp",
-        "https://benjamindehli.github.io/ElektriskSalmesykkel/img/screenshots-elektrisk-salmesykkel.webp",
-        "https://benjamindehli.github.io/ElektriskSalmesykkel/img/screenshots-mixer.webp",
         "https://benjamindehli.github.io/ElektriskSalmesykkel/img/screenshots-mixer.webp",
         "https://benjamindehli.github.io/ElektriskSalmesykkel/img/screenshots-tremulant.webp",
-        "https://benjamindehli.github.io/ElektriskSalmesykkel/img/screenshots-tremulant.webp",
-        "https://benjamindehli.github.io/ElektriskSalmesykkel/img/screenshots-noise.webp",
         "https://benjamindehli.github.io/ElektriskSalmesykkel/img/screenshots-noise.webp",
         "https://benjamindehli.github.io/ElektriskSalmesykkel/img/screenshots-reverb.webp",
-        "https://benjamindehli.github.io/ElektriskSalmesykkel/img/screenshots-reverb.webp",
-        "https://benjamindehli.github.io/ElektriskSalmesykkel/img/screenshots-air-supply.webp",
         "https://benjamindehli.github.io/ElektriskSalmesykkel/img/screenshots-air-supply.webp"
       ],
       "sameAs": [
+        "https://www.dehlimusikk.no/products/elektrisk-salmesykkel/",
+        "https://www.dehlimusikk.no/en/products/elektrisk-salmesykkel/",
         "https://store.dehlimusikk.no/l/elektrisk-salmesykkel",
         "https://dehlimusikk.gumroad.com/l/elektrisk-salmesykkel",
         "https://www.cylex.no/bedrift-produkt/elektrisk-salmesykkel_223143.html",
@@ -88,6 +99,18 @@
           "description": "Pay what you want, from $9.99"
         }
       }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://musicbrainz.org/artist/56639e59-2bb5-40bd-9d5a-97d964298b6f",
+      "name": "Benjamin Dehli",
+      "url": "https://www.dehlimusikk.no/"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.dehlimusikk.no/",
+      "name": "Dehli Musikk",
+      "url": "https://www.dehlimusikk.no/"
     }
   ]
 }
