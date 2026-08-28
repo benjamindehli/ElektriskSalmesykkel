@@ -82,8 +82,7 @@ This instrument includes 2 presets, the regular preset "ElektriskSalmesykkel" (b
 |:--:|
 |Overview|
 
-The user interface offers precise control over every aspect of the instrument and effects.
-Explore parameters to refine your sound, including control over the wind supply, reeds, tremulant, mechanical noise and reverb.
+Controls are grouped by what they act on: the wind supply, the reeds, the tremulant, mechanical noise and reverb.
 
 ### Wind and reed settings
 
@@ -129,7 +128,7 @@ Tremulant varies the wind supply to the reeds. The controls enable you to adjust
 |:--:|
 |Controls for the room reverb impulse response|
 
-The reverb are achieved using carefully crafted impulse responses of a Chase Bliss Audio & Meris CXM 1978 reverb pedal. The short reverb, evoking the intimacy of a small room (home), and the long reverb (church), enveloping your sound in the vastness of a spacious environment.
+Both reverbs are impulse responses of a Chase Bliss Audio & Meris CXM 1978 pedal: a short one for a small room (home) and a long one for a church.
 
 - On / Off
   - Turns the reverb on and off
