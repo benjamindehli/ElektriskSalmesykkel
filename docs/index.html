@@ -89,6 +89,60 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* ── keyboard access ──────────────────────────────────────────────────────── */
+
+/* The table of contents alone is 19 links, so reaching the page's own text
+   without a mouse meant 27 tab stops. This is the first thing in the tab order
+   and stays off screen until it is focused. */
+.skip {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 20;
+    padding: 0.6rem 1rem;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 0 0 var(--radius) 0;
+    text-decoration: none;
+}
+
+.skip:focus {
+    left: 0;
+}
+
+/* Nothing here removes the browser's focus ring. This only makes it a
+   deliberate one, since a default ring against a filled pill button is easy
+   to lose. */
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* An accent ring on an accent-filled button would be the same colour twice. */
+.btn-primary:focus-visible {
+    outline-color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+}
+
 a {
     color: var(--accent);
     text-decoration-thickness: 1px;
@@ -943,7 +997,7 @@ footer img {
         "width": 1200,
         "height": 662
       },
-      "dateModified": "2026-09-15"
+      "dateModified": "2026-09-17"
     },
     {
       "@type": "BreadcrumbList",
@@ -1127,6 +1181,8 @@ footer img {
 </head>
 <body>
 
+<a class="skip" href="#content">Skip to the content</a>
+
 <header class="topbar">
   <img src="img/icon.png" alt="">
   <a class="name" href="#">Elektrisk Salmesykkel</a>
@@ -1155,28 +1211,28 @@ footer img {
     <p class="toc-title" id="toc-title">On this page</p>
     <ul><li><a href="#at-a-glance">At a glance</a></li><li><a href="#demo-video">Video</a></li><li><a href="#included-formats">Included formats</a></li><li><a href="#the-plugin-version">The plugin version</a></li><li><a href="#the-decent-sampler-version">The Decent Sampler version</a></li><li><a href="#technical-specification">Technical specification</a></li><li><a href="#instrument-presets">Instrument presets</a></li><li><a href="#user-interface">User Interface</a><ul><li><a href="#wind-and-reed-settings">Wind and reed settings</a></li><li><a href="#tremulant">Tremulant</a></li><li><a href="#noise">Noise</a></li><li><a href="#reverb">Reverb</a></li></ul></li><li><a href="#air-supply-plugin-version-only">Air supply (plugin version only)</a></li><li><a href="#faq">Frequently asked questions</a></li><li><a href="#release-notes">Release notes</a></li><li><a href="#about-this-repository">About this repository</a></li></ul>
   </nav>
-  <main>
-<section id="at-a-glance"><h2><a class="anchor" href="#at-a-glance" aria-hidden="true">#</a>At a glance</h2><dl class="specs"><dt>Plugin</dt><dd>VST3, AU and Standalone for macOS</dd><dt>Decent Sampler</dt><dd>macOS, Windows and Linux</dd><dt>Version</dt><dd>2.1.0 (2026-08-01)</dd><dt>Price</dt><dd>Pay what you want, from $9.99</dd><dt>Sample rate</dt><dd>48 kHz</dd><dt>Bit depth</dt><dd>24 bit</dd><dt>Samples</dt><dd>549 files</dd><dt>Sample content</dt><dd>919.2 MB</dd></dl></section>
-<section id="demo-video"><h2><a class="anchor" href="#demo-video" aria-hidden="true">#</a>Video</h2><p>A demonstration of the Elektrisk Salmesykkel library for Decent Sampler.</p><figure class="video-item"><div class="video" data-youtube="MWzlTejTHSw"><button class="video-play" type="button" aria-label="Play video: Electric harmonium sample plugin (Elektrisk Salmesykkel)"><img src="https://i.ytimg.com/vi/MWzlTejTHSw/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="play" aria-hidden="true"></span></button></div><figcaption class="video-caption"><strong>Electric harmonium sample plugin (Elektrisk Salmesykkel)</strong> <span class="duration">2:34</span> <a href="video/">Video page</a> · <a href="https://www.youtube.com/watch?v=MWzlTejTHSw" target="_blank" rel="noopener">Watch on YouTube</a></figcaption></figure></section>
-<section id="included-formats"><h2><a class="anchor" href="#included-formats" aria-hidden="true">#</a>Included formats</h2><ul>
+  <main id="content">
+<section id="at-a-glance"><h2><a class="anchor" href="#at-a-glance" aria-hidden="true" tabindex="-1">#</a>At a glance</h2><dl class="specs"><dt>Plugin</dt><dd>VST3, AU and Standalone for macOS</dd><dt>Decent Sampler</dt><dd>macOS, Windows and Linux</dd><dt>Version</dt><dd>2.1.0 (2026-08-01)</dd><dt>Price</dt><dd>Pay what you want, from $9.99</dd><dt>Sample rate</dt><dd>48 kHz</dd><dt>Bit depth</dt><dd>24 bit</dd><dt>Samples</dt><dd>549 files</dd><dt>Sample content</dt><dd>919.2 MB</dd></dl></section>
+<section id="demo-video"><h2><a class="anchor" href="#demo-video" aria-hidden="true" tabindex="-1">#</a>Video</h2><p>A demonstration of the Elektrisk Salmesykkel library for Decent Sampler.</p><figure class="video-item"><div class="video" data-youtube="MWzlTejTHSw"><button class="video-play" type="button" aria-label="Play video: Electric harmonium sample plugin (Elektrisk Salmesykkel)"><img src="https://i.ytimg.com/vi/MWzlTejTHSw/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="play" aria-hidden="true"></span></button></div><figcaption class="video-caption"><strong>Electric harmonium sample plugin (Elektrisk Salmesykkel)</strong> <span class="duration">2:34</span> <a href="video/">Video page</a> · <a href="https://www.youtube.com/watch?v=MWzlTejTHSw" target="_blank" rel="noopener">Watch on YouTube</a></figcaption></figure></section>
+<section id="included-formats"><h2><a class="anchor" href="#included-formats" aria-hidden="true" tabindex="-1">#</a>Included formats</h2><ul>
 <li>VST3 (macOS)</li>
 <li>AU (macOS)</li>
 <li>Standalone application (macOS)</li>
 <li>Decent Sampler (macOS, Windows and Linux)</li>
 </ul>
 <p>The plugin version is currently released for macOS only. Windows and Linux versions are planned. Until then, the Decent Sampler version covers those platforms.</p></section>
-<section id="the-plugin-version"><h2><a class="anchor" href="#the-plugin-version" aria-hidden="true">#</a>The plugin version</h2><p>The plugin is a self-contained instrument, available as VST3, AU and Standalone. Samples, graphics and impulse responses are all embedded in the plugin itself, losslessly compressed, so there are no external files to install or locate. Only the samples for the selected preset are loaded into memory, and a fresh instance lets you choose which preset to load before anything is decoded.</p>
+<section id="the-plugin-version"><h2><a class="anchor" href="#the-plugin-version" aria-hidden="true" tabindex="-1">#</a>The plugin version</h2><p>The plugin is a self-contained instrument, available as VST3, AU and Standalone. Samples, graphics and impulse responses are all embedded in the plugin itself, losslessly compressed, so there are no external files to install or locate. Only the samples for the selected preset are loaded into memory, and a fresh instance lets you choose which preset to load before anything is decoded.</p>
 <p>The plugin has all the controls and features from the Decent Sampler version, including MIDI learn, the master volume fader with output meter, value readouts for the knobs and full DAW automation. On top of that, the plugin version adds:</p>
 <ul>
 <li>Drift wheels next to the pitch and modulation wheels, adding a subtle random pitch and volume drift to each voice.</li>
 <li>A velocity curve setting in the settings menu.</li>
 <li>An emulation of the shared air supply. See the section "Air supply".</li>
 </ul></section>
-<section id="the-decent-sampler-version"><h2><a class="anchor" href="#the-decent-sampler-version" aria-hidden="true">#</a>The Decent Sampler version</h2><p>This version of Elektrisk Salmesykkel is an instrument preset / sample library for Decent Sampler. If you're new to Decent Sampler, I recommend checking out <a href="https://www.decentsamples.com/how-to-use-decent-sampler/" target="_blank" rel="noopener">this guide</a> first.</p></section>
-<section id="technical-specification"><h2><a class="anchor" href="#technical-specification" aria-hidden="true">#</a>Technical specification</h2><div class="table-wrap"><table><thead><tr><th style="text-align:right"></th><th style="text-align:right">Sample rate</th><th style="text-align:right">Bit depth</th><th>Channels</th><th style="text-align:right">Number of files</th><th style="text-align:right">File size</th></tr></thead><tbody><tr><td style="text-align:right"><strong>Samples (Reeds)</strong></td><td style="text-align:right">48 kHz</td><td style="text-align:right">24 bit</td><td>2 (stereo)</td><td style="text-align:right">183</td><td style="text-align:right">855.60 MB</td></tr><tr><td style="text-align:right"><strong>Samples (Noise)</strong></td><td style="text-align:right">48 kHz</td><td style="text-align:right">24 bit</td><td>2 (stereo)</td><td style="text-align:right">366</td><td style="text-align:right">63.60 MB</td></tr><tr><td style="text-align:right"><strong>Impulse responses</strong></td><td style="text-align:right">48 kHz</td><td style="text-align:right">24 bit</td><td>2 (stereo)</td><td style="text-align:right">2</td><td style="text-align:right">2.50 MB</td></tr></tbody></table></div></section>
-<section id="instrument-presets"><h2><a class="anchor" href="#instrument-presets" aria-hidden="true">#</a>Instrument presets</h2><p>This instrument includes 2 presets, the regular preset "ElektriskSalmesykkel" (best in most cases) and the looped preset "ElektriskSalmesykkel (Looped)". For the regular version, each sample are approximately 16 seconds long. For the looped version, to achieve the best possible loop point, some of the loops are short and some are longer. Some of the loops will however have some minor artifacts. For best audio quality, you should always use the regular version. And only if you have notes held for more than 16 seconds, use the the looped version.</p></section>
-<section id="user-interface"><h2><a class="anchor" href="#user-interface" aria-hidden="true">#</a>User Interface</h2><p>Controls are grouped by what they act on: the wind supply, the reeds, the tremulant, mechanical noise and reverb.</p>
-<h3 id="wind-and-reed-settings"><a class="anchor" href="#wind-and-reed-settings" aria-hidden="true">#</a>Wind and reed settings</h3>
+<section id="the-decent-sampler-version"><h2><a class="anchor" href="#the-decent-sampler-version" aria-hidden="true" tabindex="-1">#</a>The Decent Sampler version</h2><p>This version of Elektrisk Salmesykkel is an instrument preset / sample library for Decent Sampler. If you're new to Decent Sampler, I recommend checking out <a href="https://www.decentsamples.com/how-to-use-decent-sampler/" target="_blank" rel="noopener">this guide</a> first.</p></section>
+<section id="technical-specification"><h2><a class="anchor" href="#technical-specification" aria-hidden="true" tabindex="-1">#</a>Technical specification</h2><div class="table-wrap"><table><thead><tr><th style="text-align:right"></th><th style="text-align:right">Sample rate</th><th style="text-align:right">Bit depth</th><th>Channels</th><th style="text-align:right">Number of files</th><th style="text-align:right">File size</th></tr></thead><tbody><tr><td style="text-align:right"><strong>Samples (Reeds)</strong></td><td style="text-align:right">48 kHz</td><td style="text-align:right">24 bit</td><td>2 (stereo)</td><td style="text-align:right">183</td><td style="text-align:right">855.60 MB</td></tr><tr><td style="text-align:right"><strong>Samples (Noise)</strong></td><td style="text-align:right">48 kHz</td><td style="text-align:right">24 bit</td><td>2 (stereo)</td><td style="text-align:right">366</td><td style="text-align:right">63.60 MB</td></tr><tr><td style="text-align:right"><strong>Impulse responses</strong></td><td style="text-align:right">48 kHz</td><td style="text-align:right">24 bit</td><td>2 (stereo)</td><td style="text-align:right">2</td><td style="text-align:right">2.50 MB</td></tr></tbody></table></div></section>
+<section id="instrument-presets"><h2><a class="anchor" href="#instrument-presets" aria-hidden="true" tabindex="-1">#</a>Instrument presets</h2><p>This instrument includes 2 presets, the regular preset "ElektriskSalmesykkel" (best in most cases) and the looped preset "ElektriskSalmesykkel (Looped)". For the regular version, each sample are approximately 16 seconds long. For the looped version, to achieve the best possible loop point, some of the loops are short and some are longer. Some of the loops will however have some minor artifacts. For best audio quality, you should always use the regular version. And only if you have notes held for more than 16 seconds, use the the looped version.</p></section>
+<section id="user-interface"><h2><a class="anchor" href="#user-interface" aria-hidden="true" tabindex="-1">#</a>User Interface</h2><p>Controls are grouped by what they act on: the wind supply, the reeds, the tremulant, mechanical noise and reverb.</p>
+<h3 id="wind-and-reed-settings"><a class="anchor" href="#wind-and-reed-settings" aria-hidden="true" tabindex="-1">#</a>Wind and reed settings</h3>
 <figure class="shot shot-narrow"><a href="img/screenshots-mixer.webp" target="_blank" rel="noopener"><img src="img/screenshots-mixer.webp" alt="Wind and reed controls" loading="lazy" width="330" height="324"></a><figcaption>Wind and reed controls</figcaption></figure>
 <ul>
 <li>Normal / Full (Swell)<ul>
@@ -1192,7 +1248,7 @@ footer img {
 <li>Viola: Permanently opens the swell chamber for the viola reeds</li>
 </ul></li>
 </ul>
-<h3 id="tremulant"><a class="anchor" href="#tremulant" aria-hidden="true">#</a>Tremulant</h3>
+<h3 id="tremulant"><a class="anchor" href="#tremulant" aria-hidden="true" tabindex="-1">#</a>Tremulant</h3>
 <figure class="shot shot-narrow"><a href="img/screenshots-tremulant.webp" target="_blank" rel="noopener"><img src="img/screenshots-tremulant.webp" alt="Controls for the vibrato settings" loading="lazy" width="220" height="324"></a><figcaption>Controls for the tremulant settings</figcaption></figure>
 <p>Tremulant varies the wind supply to the reeds. The controls enable you to adjust the tremulant with the desired depth and rate.</p>
 <ul>
@@ -1203,14 +1259,14 @@ footer img {
 <li>Determines the speed of the tremulant effect</li>
 </ul></li>
 </ul>
-<h3 id="noise"><a class="anchor" href="#noise" aria-hidden="true">#</a>Noise</h3>
+<h3 id="noise"><a class="anchor" href="#noise" aria-hidden="true" tabindex="-1">#</a>Noise</h3>
 <figure class="shot shot-narrow"><a href="img/screenshots-noise.webp" target="_blank" rel="noopener"><img src="img/screenshots-noise.webp" alt="Noise controls" loading="lazy" width="134" height="323"></a><figcaption>Noise controls</figcaption></figure>
 <ul>
 <li>Silent / Noisy<ul>
 <li>The amount of mechanical noise from the keys when pressed down and released</li>
 </ul></li>
 </ul>
-<h3 id="reverb"><a class="anchor" href="#reverb" aria-hidden="true">#</a>Reverb</h3>
+<h3 id="reverb"><a class="anchor" href="#reverb" aria-hidden="true" tabindex="-1">#</a>Reverb</h3>
 <figure class="shot shot-narrow"><a href="img/screenshots-reverb.webp" target="_blank" rel="noopener"><img src="img/screenshots-reverb.webp" alt="Controls for the room reverb impulse response" loading="lazy" width="307" height="324"></a><figcaption>Controls for the room reverb impulse response</figcaption></figure>
 <p>Both reverbs are impulse responses of a Chase Bliss Audio &amp; Meris CXM 1978 pedal: a short one for a small room (home) and a long one for a church.</p>
 <ul>
@@ -1224,10 +1280,10 @@ footer img {
 <li>Mix between direct signal (dry) and reverb signal (wet)</li>
 </ul></li>
 </ul></section>
-<section id="air-supply-plugin-version-only"><h2><a class="anchor" href="#air-supply-plugin-version-only" aria-hidden="true">#</a>Air supply (plugin version only)</h2><figure class="shot"><a href="img/screenshots-air-supply.webp" target="_blank" rel="noopener"><img src="img/screenshots-air-supply.webp" alt="Toggle for air supply emulation in the settings menu" loading="lazy" width="926" height="574"></a><figcaption>Toggle for air supply emulation in the settings menu</figcaption></figure>
+<section id="air-supply-plugin-version-only"><h2><a class="anchor" href="#air-supply-plugin-version-only" aria-hidden="true" tabindex="-1">#</a>Air supply (plugin version only)</h2><figure class="shot"><a href="img/screenshots-air-supply.webp" target="_blank" rel="noopener"><img src="img/screenshots-air-supply.webp" alt="Toggle for air supply emulation in the settings menu" loading="lazy" width="926" height="574"></a><figcaption>Toggle for air supply emulation in the settings menu</figcaption></figure>
 <p>The original Yamaha L-20D has a motor driven fan that supplies air to all the reeds. When many notes are played at once, each reed gets a smaller share of the air. The plugin emulates this behavior: the more notes you hold, the lower the volume, the softer the top end and the slower the attack of each note. The air recovers quickly when notes are released, just like the real blower. The emulation only affects the reed samples, not the mechanical key noises, and it can be turned on or off in the settings menu.</p></section>
-<section id="faq"><h2><a class="anchor" href="#faq" aria-hidden="true">#</a>Frequently asked questions</h2><div class="faq"><details class="faq-item"><summary>What is Elektrisk Salmesykkel?</summary><div class="body"><p>Elektrisk Salmesykkel: a Yamaha L-20D electric harmonium with tremulant, noise and reverb, and an air supply that sags as more notes are held.</p></div></details><details class="faq-item"><summary>Which formats does Elektrisk Salmesykkel come in?</summary><div class="body"><p>Elektrisk Salmesykkel is available as VST3, AU and Standalone for macOS, and as a Decent Sampler library for macOS, Windows and Linux.</p></div></details><details class="faq-item"><summary>Does Elektrisk Salmesykkel run on Windows or Linux?</summary><div class="body"><p>The plugin version is released for macOS only. On Windows and Linux, the Decent Sampler version of Elektrisk Salmesykkel covers the same instrument.</p></div></details><details class="faq-item"><summary>Does Elektrisk Salmesykkel work in Logic Pro and Ableton Live?</summary><div class="body"><p>Yes. Elektrisk Salmesykkel is available as both VST3 and AU, so it loads in any macOS host that reads those formats, including Logic Pro, Ableton Live, Cubase, Reaper and Studio One.</p></div></details><details class="faq-item"><summary>Do I need Decent Sampler to use Elektrisk Salmesykkel?</summary><div class="body"><p>Not for the plugin version. It is a self-contained instrument with its samples embedded, so there are no external files to install or locate. The Decent Sampler version is a sample library, and that one needs the free Decent Sampler application.</p></div></details><details class="faq-item"><summary>What sample rate and bit depth is Elektrisk Salmesykkel recorded at?</summary><div class="body"><p>The samples are 48 kHz, 24 bit.</p></div></details><details class="faq-item"><summary>How many samples does Elektrisk Salmesykkel contain?</summary><div class="body"><p>549 sample files, 919.2 MB of audio. Impulse responses for the effects are not counted in that figure.</p></div></details><details class="faq-item"><summary>How much does Elektrisk Salmesykkel cost?</summary><div class="body"><p>Elektrisk Salmesykkel is pay what you want, from $9.99, so the price shown is the minimum rather than a fixed one.</p></div></details><details class="faq-item"><summary>Where can I download Elektrisk Salmesykkel?</summary><div class="body"><p>From the Dehli Musikk store at <a href="https://store.dehlimusikk.no/l/elektrisk-salmesykkel" target="_blank" rel="noopener">https://store.dehlimusikk.no/l/elektrisk-salmesykkel</a>.</p></div></details><details class="faq-item"><summary>Is the source code for Elektrisk Salmesykkel available?</summary><div class="body"><p>Yes. The repository is public at <a href="https://github.com/benjamindehli/ElektriskSalmesykkel" target="_blank" rel="noopener">https://github.com/benjamindehli/ElektriskSalmesykkel</a> and licensed under GPL-3.0. The audio files are not in the repository, because the samples are a paid product.</p></div></details></div></section>
-<section id="release-notes"><h2><a class="anchor" href="#release-notes" aria-hidden="true">#</a>Release notes</h2><details class="release" open><summary>Version 2.1.0<span class="date">2026-08-01</span></summary><div class="body"><p>The changes in this release apply to the plugin version only. The DecentSampler version is unchanged.</p>
+<section id="faq"><h2><a class="anchor" href="#faq" aria-hidden="true" tabindex="-1">#</a>Frequently asked questions</h2><div class="faq"><details class="faq-item"><summary>What is Elektrisk Salmesykkel?</summary><div class="body"><p>Elektrisk Salmesykkel: a Yamaha L-20D electric harmonium with tremulant, noise and reverb, and an air supply that sags as more notes are held.</p></div></details><details class="faq-item"><summary>Which formats does Elektrisk Salmesykkel come in?</summary><div class="body"><p>Elektrisk Salmesykkel is available as VST3, AU and Standalone for macOS, and as a Decent Sampler library for macOS, Windows and Linux.</p></div></details><details class="faq-item"><summary>Does Elektrisk Salmesykkel run on Windows or Linux?</summary><div class="body"><p>The plugin version is released for macOS only. On Windows and Linux, the Decent Sampler version of Elektrisk Salmesykkel covers the same instrument.</p></div></details><details class="faq-item"><summary>Does Elektrisk Salmesykkel work in Logic Pro and Ableton Live?</summary><div class="body"><p>Yes. Elektrisk Salmesykkel is available as both VST3 and AU, so it loads in any macOS host that reads those formats, including Logic Pro, Ableton Live, Cubase, Reaper and Studio One.</p></div></details><details class="faq-item"><summary>Do I need Decent Sampler to use Elektrisk Salmesykkel?</summary><div class="body"><p>Not for the plugin version. It is a self-contained instrument with its samples embedded, so there are no external files to install or locate. The Decent Sampler version is a sample library, and that one needs the free Decent Sampler application.</p></div></details><details class="faq-item"><summary>What sample rate and bit depth is Elektrisk Salmesykkel recorded at?</summary><div class="body"><p>The samples are 48 kHz, 24 bit.</p></div></details><details class="faq-item"><summary>How many samples does Elektrisk Salmesykkel contain?</summary><div class="body"><p>549 sample files, 919.2 MB of audio. Impulse responses for the effects are not counted in that figure.</p></div></details><details class="faq-item"><summary>How much does Elektrisk Salmesykkel cost?</summary><div class="body"><p>Elektrisk Salmesykkel is pay what you want, from $9.99, so the price shown is the minimum rather than a fixed one.</p></div></details><details class="faq-item"><summary>Where can I download Elektrisk Salmesykkel?</summary><div class="body"><p>From the Dehli Musikk store at <a href="https://store.dehlimusikk.no/l/elektrisk-salmesykkel" target="_blank" rel="noopener">https://store.dehlimusikk.no/l/elektrisk-salmesykkel</a>.</p></div></details><details class="faq-item"><summary>Is the source code for Elektrisk Salmesykkel available?</summary><div class="body"><p>Yes. The repository is public at <a href="https://github.com/benjamindehli/ElektriskSalmesykkel" target="_blank" rel="noopener">https://github.com/benjamindehli/ElektriskSalmesykkel</a> and licensed under GPL-3.0. The audio files are not in the repository, because the samples are a paid product.</p></div></details></div></section>
+<section id="release-notes"><h2><a class="anchor" href="#release-notes" aria-hidden="true" tabindex="-1">#</a>Release notes</h2><details class="release" open><summary>Version 2.1.0<span class="date">2026-08-01</span></summary><div class="body"><p>The changes in this release apply to the plugin version only. The DecentSampler version is unchanged.</p>
 <ul>
 <li>Added a translucent overlay graphic on top of the interface.</li>
 <li>Keys that are hovered or held on the keyboard are now shaded in a neutral way instead of turning yellow:<ul>
@@ -1252,7 +1308,7 @@ footer img {
 <details class="release"><summary>Version 1.0.0<span class="date">2024-02-11</span></summary><div class="body"><ul>
 <li>First version released</li>
 </ul></div></details></section>
-<section id="about-this-repository"><h2><a class="anchor" href="#about-this-repository" aria-hidden="true">#</a>About this repository</h2><p>This repository contains the source for both the Decent Sampler library (the DecentSampler folder) and the plugin version. The plugin is a thin wrapper around the shared Dehli Musikk sampler engine, and a converter translates the Decent Sampler library into the engine's native preset format at build time. The audio files are not part of this repository, since the samples are a paid product. The full version is available from <a href="https://store.dehlimusikk.no/" target="_blank" rel="noopener">store.dehlimusikk.no</a>.</p></section>
+<section id="about-this-repository"><h2><a class="anchor" href="#about-this-repository" aria-hidden="true" tabindex="-1">#</a>About this repository</h2><p>This repository contains the source for both the Decent Sampler library (the DecentSampler folder) and the plugin version. The plugin is a thin wrapper around the shared Dehli Musikk sampler engine, and a converter translates the Decent Sampler library into the engine's native preset format at build time. The audio files are not part of this repository, since the samples are a paid product. The full version is available from <a href="https://store.dehlimusikk.no/" target="_blank" rel="noopener">store.dehlimusikk.no</a>.</p></section>
   </main>
 </div>
 
