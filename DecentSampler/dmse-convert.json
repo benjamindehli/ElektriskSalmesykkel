@@ -4,6 +4,7 @@
     "reverbGain": -10,
     "polySaveDefault": false,
     "airSupply": { "volume": 0.35, "brightness": 0.40, "attack": 0.20, "tags": ["diapason", "viola", "close"] },
+    "keyPressure": { "tags": ["diapason", "viola", "close"] },
     "overlay": {
         "default": "Resources/overlay_default.png"
     },

@@ -14,6 +14,21 @@
       "close"
     ]
   },
+  "keyPressure": {
+    "threshold": 0.05,
+    "travelCurve": 3.0,
+    "levelDbBass": 36.0,
+    "levelDbTreble": 19.0,
+    "levelCurve": 1.8,
+    "pitchCents": 8.0,
+    "brightness": 1.5,
+    "smoothingMs": 15.0,
+    "tags": [
+      "diapason",
+      "viola",
+      "close"
+    ]
+  },
   "modes": [
     "elektrisksalmesykkel-looped",
     "elektrisksalmesykkel"
