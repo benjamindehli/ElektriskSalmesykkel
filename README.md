@@ -149,6 +149,20 @@ The plugin emulates this behavior: the more notes you hold, the lower the volume
 The air recovers quickly when notes are released, just like the real blower.
 The emulation only affects the reed samples, not the mechanical key noises, and it can be turned on or off in the settings menu.
 
+## Key pressure (plugin version only)
+
+On the original instrument, each key opens a valve that lets air through to its reeds.
+A key that is only partly pressed lets less air through, so the reed sounds softer, darker and slightly flat, and below a certain point it does not sound at all.
+The plugin emulates this with an MPE controller: the pressure on each key sets how much air its reeds get.
+As on the real instrument, most of the change happens at the very start of the key press.
+The curves are based on recordings of the real instrument with a key pressed down very slowly.
+
+- MPE controllers also get per-note pitch bend.
+- Keyboards without MPE play every note with full air, exactly as the samples were recorded.
+- The mechanical key noises are not affected.
+- When air supply is on, a partly pressed key also draws less air from the blower.
+- Key pressure can be turned on or off in the settings menu.
+
 ## About this repository
 
 This repository contains the source for both the Decent Sampler library (the DecentSampler folder) and the plugin version.
