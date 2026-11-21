@@ -11682,7 +11682,7 @@
               "width": 58,
               "height": 120
             },
-            "label": "Tremulant Depth",
+            "label": "Tremulant depth",
             "valueType": "float",
             "min": 0.0,
             "max": 127.0,
@@ -11744,7 +11744,7 @@
               "width": 58,
               "height": 120
             },
-            "label": "Tremulant Rate",
+            "label": "Tremulant rate",
             "valueType": "float",
             "min": 0.0,
             "max": 127.0,
@@ -11779,7 +11779,7 @@
               "width": 58,
               "height": 120
             },
-            "label": "Mechanical Noise",
+            "label": "Mechanical noise",
             "valueType": "float",
             "min": 0.0,
             "max": 127.0,
@@ -11824,7 +11824,7 @@
               "width": 58,
               "height": 120
             },
-            "label": "Reverb Mix",
+            "label": "Reverb mix",
             "valueType": "percent",
             "min": 0.0,
             "max": 127.0,
