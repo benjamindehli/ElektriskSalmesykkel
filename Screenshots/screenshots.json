@@ -1,0 +1,123 @@
+{
+    "scale": 2,
+    "shots": [
+        {
+            "file": "air-supply.png",
+            "mode": "ElektriskSalmesykkel",
+            "crop": {
+                "x": 174,
+                "y": 8,
+                "width": 463,
+                "height": 347
+            },
+            "set": {
+                "Swell": 38.1,
+                "Loudness": 16.9333,
+                "Tremulant depth": 48.6833,
+                "Tremulant rate": 80.4333,
+                "Mechanical noise": 101.6,
+                "Reverb mix": 91.0167,
+                "btn_1": 1
+            },
+            "settings": true,
+            "spotlight": {
+                "x": 250,
+                "y": 273,
+                "width": 164,
+                "height": 26
+            }
+        },
+        {
+            "file": "elektrisk-salmesykkel.png",
+            "mode": "ElektriskSalmesykkel",
+            "window": true,
+            "set": {
+                "Swell": 38.1,
+                "Loudness": 16.9333,
+                "Tremulant depth": 48.6833,
+                "Tremulant rate": 80.4333,
+                "Mechanical noise": 101.6,
+                "Reverb mix": 91.0167,
+                "btn_1": 1,
+                "Mod wheel": 86,
+                "volumeDrift": 0.24
+            }
+        },
+        {
+            "file": "mixer.png",
+            "mode": "ElektriskSalmesykkel",
+            "crop": {
+                "x": 50,
+                "y": 65,
+                "width": 174,
+                "height": 170
+            },
+            "set": {
+                "Swell": 38.1,
+                "Loudness": 16.9333,
+                "Tremulant depth": 48.6833,
+                "Tremulant rate": 80.4333,
+                "Mechanical noise": 101.6,
+                "Reverb mix": 91.0167,
+                "btn_1": 1
+            }
+        },
+        {
+            "file": "noise.png",
+            "mode": "ElektriskSalmesykkel",
+            "crop": {
+                "x": 378,
+                "y": 65,
+                "width": 71,
+                "height": 170
+            },
+            "set": {
+                "Swell": 38.1,
+                "Loudness": 16.9333,
+                "Tremulant depth": 48.6833,
+                "Tremulant rate": 80.4333,
+                "Mechanical noise": 101.6,
+                "Reverb mix": 91.0167,
+                "btn_1": 1
+            }
+        },
+        {
+            "file": "reverb.png",
+            "mode": "ElektriskSalmesykkel",
+            "crop": {
+                "x": 600,
+                "y": 64,
+                "width": 163,
+                "height": 172
+            },
+            "set": {
+                "Swell": 38.1,
+                "Loudness": 16.9333,
+                "Tremulant depth": 48.6833,
+                "Tremulant rate": 80.4333,
+                "Mechanical noise": 101.6,
+                "Reverb mix": 91.0167,
+                "btn_1": 1
+            }
+        },
+        {
+            "file": "tremulant.png",
+            "mode": "ElektriskSalmesykkel",
+            "crop": {
+                "x": 243,
+                "y": 65,
+                "width": 116,
+                "height": 170
+            },
+            "set": {
+                "Swell": 38.1,
+                "Loudness": 16.9333,
+                "Tremulant depth": 48.6833,
+                "Tremulant rate": 80.4333,
+                "Mechanical noise": 101.6,
+                "Reverb mix": 91.0167,
+                "btn_1": 1
+            }
+        }
+    ]
+}
