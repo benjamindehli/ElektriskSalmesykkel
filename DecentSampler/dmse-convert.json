@@ -9,6 +9,11 @@
         "default": "Resources/overlay_default.png"
     },
     "overlayScope": "instrument",
+    "labels": {
+        "btn_0": "Reed chamber",
+        "btn_1": "Reverb",
+        "btn_2": "Reverb type"
+    },
     "keyboardColors": {
         "default": [{ "loNote": 36, "hiNote": 96, "color": "none" }]
     }

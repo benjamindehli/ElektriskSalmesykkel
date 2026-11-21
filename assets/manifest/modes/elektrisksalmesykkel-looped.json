@@ -11855,6 +11855,7 @@
         "buttons": [
           {
             "id": "btn_0",
+            "label": "Reed chamber",
             "rect": {
               "x": 143,
               "y": 89,
@@ -12061,6 +12062,7 @@
           },
           {
             "id": "btn_1",
+            "label": "Reverb",
             "rect": {
               "x": 619,
               "y": 149,
@@ -12123,6 +12125,7 @@
           },
           {
             "id": "btn_2",
+            "label": "Reverb type",
             "rect": {
               "x": 663,
               "y": 149,
