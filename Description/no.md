@@ -16,4 +16,4 @@ Pluginen legger til en emulering av den felles lufttilførselen. På det ekte in
 - Eget nivå for mekanisk tangentstøy når tangenten trykkes ned og slippes.
 - Impulsresponser for kirke og hjemmerom fra en Chase Bliss Audio & Meris CXM 1978.
 - Vanlig og loopet modus, den loopede for toner som holdes i mer enn seksten sekunder.
-- 549 stereosampler i 48 kHz / 24 bit, bygd inn tapsfritt (922 MB kildebibliotek).
+- 549 stereosampler i 48 kHz / 24 bit, lagret tapsfritt (922 MB kildebibliotek).

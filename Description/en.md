@@ -16,4 +16,4 @@ The plugin adds an emulation of the shared air supply. On the real instrument ev
 - Independent level for mechanical key noise on press and release.
 - Church and home reverb impulse responses from a Chase Bliss Audio & Meris CXM 1978.
 - Regular and looped modes, the looped one for notes held beyond sixteen seconds.
-- 549 stereo samples at 48 kHz / 24-bit, embedded losslessly (922 MB source library).
+- 549 stereo samples at 48 kHz / 24-bit, stored losslessly (922 MB source library).
